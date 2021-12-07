@@ -1,0 +1,27 @@
+{
+  "name": "TxtAnime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "build-plugin": "webpack --config webpack.config.js",
+    "watch-plugin": "webpack --config webpack.config.js --watch",
+    "build-site": "webpack --config site.config.js",
+    "watch-site": "webpack --config site.config.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}

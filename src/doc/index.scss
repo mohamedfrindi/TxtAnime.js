@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cunia');
+
+// font-family: 'Cunia', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+// all variabls
+$font-1 : 'Cunia', sans-serif;
+$font-2 : 'Poppins', sans-serif;
+$main-color : #a29bfe;
+$color-black : #1A1A1A;
+$color-dark : #5a5a5a;
+$color-white : white;
+$color-light : #f9f9f9;
+$shadow : 0 0 30px #ededed;
+
+// demo colors
+$d-1 : #d2eaff;
+
+$d-2 : #f1dcd7;
+
+$d-3 : #d7dce3;
+
+$d-4 : #ffeaa7;
+
+$d-5 : #d0e6ef;
+
+$d-6 : #f3cec5;
+
+$d-7 : #d7e7e7;
+
+$d-8 : #d5d2f9;
+
+$d-9 : #f7e6e3;
+
+$d-10 : #d3d3d3;
+
+$d-11 : #d7e7e8;
+
+$d-12 : #d3eaff;
+
+
+// for class
+$colors : $d-1 $d-2 $d-3 $d-4 $d-5 $d-6 $d-7 $d-8 $d-9 $d-10 $d-11 $d-12;
+
+
+// globals style
+body{
+    font-family: $font-2;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border : none;
+    outline : 0;
+    background: transparent;
+}
+
+.tx-container{
+    width: 80%;
+    margin: auto;
+}
+
+// site style -----------------------
+.header{
+    background: $color-white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: $shadow;
+
+    .header-container{
+        width: 80%;
+        margin: auto;
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo{
+                a{
+                    color: $main-color;
+                }
+            }
+            .nav-bar{
+                display: flex;
+                align-items: center;
+                ul{
+                    margin-right: 27px;
+                    padding-right: 27px;
+                    border-right: 1px solid #f1f1f1;
+                    display: flex;
+
+                    li{
+                        margin-right: 3px;
+                        a{
+                            color: $color-dark;
+                            font-size: 13px;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                            letter-spacing: .35px;
+                            padding: 5px 15px;
+                            transition: color .5s ease-in-out;
+
+                            &:hover{
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+                .btn{
+                    width: 50px;
+                    height: 50px;
+                    border: 0;
+                    outline: 0;
+                    border-radius: 5px;
+                    a{
+                        i{
+                            font-size: 20px;
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.demo{
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+
+    .demo-item{
+        margin-bottom: 25px;
+
+        .demo-item-content{
+            display: flex;
+
+            .demo-view{
+                flex: 1;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                h2 , div span{
+                    font-size: 48px;
+                    font-weight: 900;
+                    letter-spacing: .25px;
+                    color: $color-dark;
+                }
+            }
+            .demo-code{
+                flex: 1;
+                background: #f9f9f9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                pre {
+                    background: #FFFFFF;
+                    padding: 0 30px;
+                    width: 50%;
+
+                    code{
+                        line-height: 1.8;
+                        background: #FFFFFF;
+                        color: gray;
+                    }
+                }
+            }
+        }
+        
+        @each $color in $colors {
+            $i:index($colors , $color);
+
+            &.d-#{$i} {
+                border: 1px solid $color;
+                .demo-view{
+                    background: $color;
+                }
+            }
+        }
+
+    }
+}
