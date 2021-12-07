@@ -3,8 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 
-
-
 const mode_development = {
         entry: './src/index.js',
         mode : 'development',
