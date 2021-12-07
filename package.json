@@ -1,7 +1,7 @@
 {
-  "name": "TxtAnime",
+  "name": "txtanime",
   "version": "1.0.0",
-  "description": "",
+  "description": "It is a JavaScript library, which contains many beautiful and free text effects.",
   "main": "index.js",
   "private": "true",
   "scripts": {
@@ -11,7 +11,7 @@
     "watch-site": "webpack --config site.config.js --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mohamed Frindi",
   "license": "ISC",
   "devDependencies": {
     "browser-sync-webpack-plugin": "^2.3.0",
@@ -22,5 +22,13 @@
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedfrindi/TxtAnime.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohamedfrindi/TxtAnime.js/issues"
+  },
+  "homepage": "https://github.com/mohamedfrindi/TxtAnime.js#readme"
 }
