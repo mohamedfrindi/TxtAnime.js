@@ -54,7 +54,6 @@ const mode_production = {
         ],
 } 
 
-
 module.exports = [
     mode_development ,
     mode_production
