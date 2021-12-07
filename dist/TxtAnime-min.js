@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);\n  --easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1);\n  --easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);\n  --easeOutBack: cubic-bezier(0.34, 1.56, 0.64, 1);\n  --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);\n  --easeOutOne: cubic-bezier(0.075, 0.82, 0.165, 1);\n  --easeOutTwo: cubic-bezier(0.165, 0.84, 0.44, 1); }\n\n.tx-an-1 {\n  display: inline-block;\n  animation: tx-an-1 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-1 {\n  0% {\n    opacity: 0;\n    transform: translateY(150px) translateX(150px) rotate(200deg); }\n  100% {\n    opacity: 1;\n    transform: translateY(0) translateX(0) rotateZ(0); } }\n\n.tx-an-2 {\n  display: inline-block;\n  animation: tx-an-2 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-2 {\n  0% {\n    opacity: 0;\n    transform: translateY(-200px) translateX(150px) rotate(-280deg); }\n  100% {\n    opacity: 1;\n    transform: translateY(0) translateX(0) rotate(0); } }\n\n.tx-an-3 {\n  display: inline-block;\n  animation: tx-an-3 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-3 {\n  0% {\n    opacity: 0;\n    transform: translateX(100px) scale(10);\n    filter: blur(5); }\n  100% {\n    opacity: 1;\n    transform: translateX(0) scale(1);\n    filter: blur(0); } }\n\n.tx-an-4 {\n  display: inline-block;\n  animation: tx-an-4 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-4 {\n  0% {\n    opacity: 0;\n    transform: translateX(100px); }\n  100% {\n    opacity: 1;\n    transform: translateX(0px); } }\n\n.tx-an-5 {\n  display: inline-block;\n  animation: tx-an-5 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-5 {\n  0% {\n    opacity: 0;\n    transform: translateY(100px); }\n  100% {\n    opacity: 1;\n    transform: translateY(0px); } }\n\n.tx-an-6 {\n  display: inline-block;\n  animation: tx-an-6 var(--easeOutBack) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-6 {\n  0% {\n    opacity: 0;\n    transform: scale(0); }\n  100% {\n    opacity: 1;\n    transform: scale(1); } }\n\n.tx-an-7 {\n  display: inline-block;\n  animation: tx-an-7 var(--easeOutQuart) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-7 {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.tx-an-8 {\n  display: inline-block;\n  animation: tx-an-8 var(--easeOutQuart) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-8 {\n  0% {\n    filter: blur(5px);\n    opacity: 0; }\n  100% {\n    filter: blur(0px);\n    opacity: 1; } }\n\n.tx-an-9 {\n  display: inline-block;\n  animation: tx-an-9 var(--easeOutQuart) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-9 {\n  0% {\n    transform: scale(1.3);\n    opacity: 0; }\n  100% {\n    transform: scale(1);\n    opacity: 1; } }\n\n.tx-an-10 {\n  display: inline-block;\n  animation: tx-an-10 var(--easeOutBack) forwards; }\n\n@keyframes tx-an-10 {\n  0% {\n    transform: translateY(100px); }\n  100% {\n    transform: translateY(0); } }\n\n.tx-an-11 {\n  display: inline-block;\n  animation: tx-an-11 var(--easeOutBack) forwards; }\n\n@keyframes tx-an-11 {\n  0% {\n    transform: translateY(-110%); }\n  100% {\n    transform: translateY(0%); } }\n\n.scale-1 {\n  display: block;\n  animation: 2s scale-1 var(--easeOutExpo) forwards;\n  opacity: 0;\n  transform-origin: center; }\n\n@keyframes scale-1 {\n  0% {\n    transform: scale(0); }\n  50% {\n    opacity: 1;\n    animation: 3s scl var(--easeOutExpo) forwards;\n    @keyframes scl {\n      0% {\n        transform: scale(1); }\n      100% {\n        transform: scale(1.3); } } }\n  100% {\n    opacity: 0;\n    transform: scale(2); } }\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);\n  --easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1);\n  --easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);\n  --easeOutBack: cubic-bezier(0.34, 1.56, 0.64, 1);\n  --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);\n  --easeOutOne: cubic-bezier(0.075, 0.82, 0.165, 1);\n  --easeOutTwo: cubic-bezier(0.165, 0.84, 0.44, 1);\n  --easeOutThree: cubic-bezier(0.09, 0.78, 0, 1.28); }\n\n.tx-an-1 {\n  display: inline-block;\n  animation: tx-an-1 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-1 {\n  0% {\n    opacity: 0;\n    transform: translateY(150px) translateX(150px) rotate(200deg); }\n  100% {\n    opacity: 1;\n    transform: translateY(0) translateX(0) rotateZ(0); } }\n\n.tx-an-2 {\n  display: inline-block;\n  animation: tx-an-2 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-2 {\n  0% {\n    opacity: 0;\n    transform: translateY(-200px) translateX(150px) rotate(-280deg); }\n  100% {\n    opacity: 1;\n    transform: translateY(0) translateX(0) rotate(0); } }\n\n.tx-an-3 {\n  display: inline-block;\n  animation: tx-an-3 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-3 {\n  0% {\n    opacity: 0;\n    transform: translateX(100px) scale(10);\n    filter: blur(5); }\n  100% {\n    opacity: 1;\n    transform: translateX(0) scale(1);\n    filter: blur(0); } }\n\n.tx-an-4 {\n  display: inline-block;\n  animation: tx-an-4 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-4 {\n  0% {\n    opacity: 0;\n    transform: translateX(100px); }\n  100% {\n    opacity: 1;\n    transform: translateX(0px); } }\n\n.tx-an-5 {\n  display: inline-block;\n  animation: tx-an-5 var(--easeOutOne) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-5 {\n  0% {\n    opacity: 0;\n    transform: translateY(100px); }\n  100% {\n    opacity: 1;\n    transform: translateY(0px); } }\n\n.tx-an-6 {\n  display: inline-block;\n  animation: tx-an-6 var(--easeOutBack) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-6 {\n  0% {\n    opacity: 0;\n    transform: scale(0); }\n  100% {\n    opacity: 1;\n    transform: scale(1); } }\n\n.tx-an-7 {\n  display: inline-block;\n  animation: tx-an-7 var(--easeOutCirc) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-7 {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n.tx-an-8 {\n  display: inline-block;\n  animation: tx-an-8 var(--easeOutQuart) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-8 {\n  0% {\n    filter: blur(5px);\n    opacity: 0; }\n  100% {\n    filter: blur(0px);\n    opacity: 1; } }\n\n.tx-an-9 {\n  display: inline-block;\n  animation: tx-an-9 var(--easeOutQuart) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-9 {\n  0% {\n    transform: scale(1.3);\n    opacity: 0; }\n  100% {\n    transform: scale(1);\n    opacity: 1; } }\n\n.tx-an-10 {\n  display: inline-block;\n  animation: tx-an-10 var(--easeOutCirc) forwards;\n  opacity: 0; }\n\n@keyframes tx-an-10 {\n  0% {\n    opacity: 0;\n    transform: translateY(100px); }\n  50% {\n    opacity: 1;\n    filter: blur(0px);\n    transform: translateY(0px); }\n  100% {\n    opacity: 0;\n    filter: blur(1px);\n    transform: translateY(-100px) scale(0.8); } }\n\n.scale-1 {\n  display: block;\n  animation: scale-1 var(--easeOutThree) forwards;\n  opacity: 0;\n  transform-origin: center; }\n\n@keyframes scale-1 {\n  0% {\n    transform: scale(0); }\n  50% {\n    filter: blur(0px);\n    opacity: 1;\n    transform: scale(1); }\n  100% {\n    filter: blur(5px);\n    opacity: 0;\n    transform: scale(2); } }\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -627,11 +627,9 @@ function TxtAnime () {
         this.default = {
             effect : 'scale-1',
             delayStart : 0, 
-            delay: 0.05,
-            duration: 0.7, 
-            loop : false,
-            loopTime : 2000,
-            overflow : true,
+            delay: 1.5,
+            duration: 2, 
+            loop : true,
             text : ['Go' , 'To' , 'Site'],
         }
 
@@ -651,7 +649,6 @@ function TxtAnime () {
 
         
         // func 
-        startScale()
         function startScale() {
 
             // parent styles
@@ -671,19 +668,24 @@ function TxtAnime () {
                 spn.classList.remove(effect)
             }
 
-            // 
+            // main func
             elmnt.forEach((el) => {
                 let spnArr = Array.from(el.querySelectorAll('span'))
-                
-                spnArr.forEach((sp) => {
-                    sp.style.display = 'none'
-                })
 
                 let start = 0;
-                spnArr[start].classList.add(effect)
-                spnArr[start].style.display = 'block'
 
-                setInterval(() => {
+                spnArr.forEach((sp) => {
+                    sp.style.display = 'none';
+
+                    spnArr[start].style.display = 'block'
+                    spnArr[start].classList.add(effect)
+
+                    if (sp.classList.contains(effect)) {
+                        sp.style.animationDuration = `${duration}s`
+                    }
+                })
+
+                let startInterval = setInterval(() => {
 
                     spnArr[start].classList.remove(effect)
                     spnArr[start].style.display = 'none'
@@ -691,19 +693,35 @@ function TxtAnime () {
                     start++
 
                     if (start > text.length - 1) {
-                        start = 0
+                        start = 0;
+                        
+                        if (loop !== true) {
+                            el.innerHTML = ''
+                            clearInterval(startInterval)
+                        }
                     }
 
                     spnArr[start].classList.add(effect)
-                    spnArr[start].style.display = 'block'
+                    spnArr[start].style.display = 'block';
+
+                    spnArr.forEach((spn) => {
+                        if (spn.classList.contains(effect)) {
+                            spn.style.animationDuration = `${duration}s`
+                        }
+                    })
+
                 },delay * 1000)
 
             })
         }
+
+        // delayStart
+        setTimeout(() => {
+            startScale()
+        },delayStart * 1000)
     }
 
 }
-
 
 window.TxtAnime = TxtAnime
 
