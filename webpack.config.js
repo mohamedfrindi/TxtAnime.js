@@ -1,6 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 
 const mode_development = {
@@ -25,7 +23,7 @@ const mode_development = {
 
 const mode_production = {
         entry: './src/index.js',
-        mode : 'development',
+        mode : 'production',
         devtool: false,
 
         output: {
@@ -41,17 +39,6 @@ const mode_production = {
                 }
             ]
         },
-
-        plugins : [
-            new HtmlWebpackPlugin({
-                template: 'src/index.html'
-            }),
-            new BrowserSyncPlugin({
-                host: 'localhost',
-                port: 7070,
-                server: { baseDir: ['dist'] }
-            })
-        ],
 } 
 
 module.exports = [
