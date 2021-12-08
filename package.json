@@ -10,7 +10,19 @@
     "build-site": "webpack --config site.config.js",
     "watch-site": "webpack --config site.config.js --watch"
   },
-  "keywords": [],
+  "keywords" :[
+    "javascript",
+    "plugin",
+    "js plugin",
+    "animation",
+    "css animation",
+    "javascript animation",
+    "txt anime",
+    "TxtAnime",
+    "text animation",
+    "text animation css",
+    "text animation javascript"
+  ],
   "author": "Mohamed Frindi",
   "license": "ISC",
   "devDependencies": {
