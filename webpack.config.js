@@ -9,6 +9,12 @@ const mode_development = {
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'TxtAnime.js',
+            library: {
+                name: 'TxtAnime',
+                type: 'umd',
+                export: 'default',
+                umdNamedDefine: true,
+            },
         },
 
         module: {
@@ -27,8 +33,14 @@ const mode_production = {
         devtool: false,
 
         output: {
-                path: path.resolve(__dirname, 'dist'),
-                filename: 'TxtAnime-min.js',
+            path: path.resolve(__dirname, 'dist'),
+            filename: 'TxtAnime-min.js',
+            library: {
+                name: 'TxtAnime',
+                type: 'umd',
+                export: 'default',
+                umdNamedDefine: true,
+            },
         },
 
         module: {
@@ -40,6 +52,7 @@ const mode_production = {
             ]
         },
 } 
+
 
 module.exports = [
     mode_development ,
