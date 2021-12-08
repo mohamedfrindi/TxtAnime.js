@@ -1,7 +1,7 @@
 # TxtAnime.js
 It is a JavaScript library, which contains many beautiful and free text effects.
 
-<h3><a href="#">Demo</a></h3>
+<h3><a href="https://mohamedfrindi.github.io/TxtAnime.js/">Demo</a></h3>
 
 <br>
 
