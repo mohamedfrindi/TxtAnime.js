@@ -1,4 +1,14 @@
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define("TxtAnime", [], factory);
+	else if(typeof exports === 'object')
+		exports["TxtAnime"] = factory();
+	else
+		root["TxtAnime"] = factory();
+})(self, function() {
+return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -523,7 +533,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "TxtAnime": () => (/* binding */ TxtAnime)
 /* harmony export */ });
-// class animate text
 function TxtAnime () {
 
     this.animate = function(element , options) {
@@ -723,8 +732,6 @@ function TxtAnime () {
 
 }
 
-window.TxtAnime = TxtAnime
-
 
 
 /***/ })
@@ -804,12 +811,24 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TxtAnime": () => (/* reexport safe */ _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__.TxtAnime)
+/* harmony export */ });
 /* harmony import */ var _main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.scss */ "./src/main.scss");
 /* harmony import */ var _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/TxtAnime */ "./src/js/TxtAnime.js");
 
 
 
+if (typeof window !== 'undefined') {
+    window.TxtAnime = _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__.TxtAnime;
+}
+
+
+
 })();
 
+__webpack_exports__ = __webpack_exports__["default"];
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});
