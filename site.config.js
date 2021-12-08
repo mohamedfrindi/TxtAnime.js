@@ -2,7 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
-
 module.exports = {
     entry: './src/doc/index.js',
     mode : 'production',
