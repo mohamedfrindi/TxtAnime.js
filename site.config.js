@@ -10,6 +10,12 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'site'),
         filename: 'index.js',
+        library: {
+            name: 'TxtAnime',
+            type: 'umd',
+            export: 'default',
+            umdNamedDefine: true,
+        },
     },
 
     module: {
