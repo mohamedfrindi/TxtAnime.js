@@ -8,7 +8,6 @@ It is a JavaScript library, which contains many beautiful and free text effects.
 <br>
 <br>
 
-
 ### npm
 ````
 npm install txtanime --save
