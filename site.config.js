@@ -8,7 +8,7 @@ module.exports = {
     devtool: false,
 
     output: {
-        path: path.resolve(__dirname, 'site'),
+        path: path.resolve(__dirname, './'),
         filename: 'index.js',
         library: {
             name: 'TxtAnime',
@@ -34,7 +34,7 @@ module.exports = {
         new BrowserSyncPlugin({
             host: 'localhost',
             port: 8080,
-            server: { baseDir: ['site'] }
+            server: { baseDir: ['./'] }
         })
     ],
 }
