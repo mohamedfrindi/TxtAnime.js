@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "It is a JavaScript library, which contains many beautiful and free text effects.",
   "main": "entry.js",
-  "private" : "true",
   "scripts": {
     "build-plugin": "webpack --config webpack.config.js",
     "watch-plugin": "webpack --config webpack.config.js --watch",
