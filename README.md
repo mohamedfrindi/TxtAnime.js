@@ -1,21 +1,24 @@
 # TxtAnime.js
 It is a JavaScript library, which contains many beautiful and free text effects.
 
-<a href="#">Demo</a>
+<h3><a href="#">Demo</a></h3>
+
+<br>
 
 ## Installation
 
 <br>
-<br>
 
 ### npm
 ````
-npm install txtanime --save
+npm install txtanime.js --save
 ````
 ````javascript
-import { TxtAnime } from "txtanime";
-or 
-const { TxtAnime } = require('txtanime');
+// ES 2015
+import { TxtAnime } from "txtanime.js";
+
+// CommenJs
+const { TxtAnime } = require('txtanime.js');
 ````
 
 <br>
