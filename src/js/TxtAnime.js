@@ -22,7 +22,7 @@ function TxtAnime () {
             delayStart : 0, 
             delay: 0.05,
             duration: 0.7, 
-            loop : false,
+            loop : true,
             loopTime : 2000,
             overflow : true
         }
