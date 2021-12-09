@@ -144,7 +144,7 @@ txt.scale('element',{
 
   effect : 'scale-1',
   // Select the effect you want
-  // currently Accepts 1 options : scale-1
+  // currently Accepts 2 options : scale-1 | scale-2
   // default option : scale-1
   
   delayStart: 0,
