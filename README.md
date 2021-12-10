@@ -2,6 +2,7 @@
 It is a JavaScript library, which contains many beautiful and free text effects.
 
 <br>
+<br>
 
 <h2><a href="https://mohamedfrindi.github.io/TxtAnime.js/">Demo</a></h2>
 
