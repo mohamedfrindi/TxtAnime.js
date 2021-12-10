@@ -1,11 +1,15 @@
 # TxtAnime.js
 It is a JavaScript library, which contains many beautiful and free text effects.
 
-<h3><a href="https://mohamedfrindi.github.io/TxtAnime.js/">Demo</a></h3>
+<img src="txtanimejs.gif">
 
 <br>
 
-## Installation
+<h2><a href="https://mohamedfrindi.github.io/TxtAnime.js/">Demo</a></h2>
+
+<br>
+
+# Installation
 
 <br>
 
@@ -49,6 +53,9 @@ const { TxtAnime } = require('txtanime.js');
     <!-- In case you want to implement txt.scale() -->
     <div class="txt"></div>
 
+    <!-- In case you want to implement txt.overlay() -->
+    <h2 class="element">Animation</h2>
+
 </body>
 
 
@@ -62,6 +69,10 @@ const { TxtAnime } = require('txtanime.js');
     })
     // or 
     txt.scale('.txt' , {
+        // options
+    })
+    // or 
+    txt.overlay('.txt' , {
         // options
     })
 
@@ -80,6 +91,10 @@ txt.animate('.element' , {
 })
 // or
 txt.scale('.element' , {
+    // opions
+})
+// or
+txt.overlay('.element' , {
     // opions
 })
 ````
@@ -105,23 +120,27 @@ txt.animate('element',{
   delayStart: 0,
   // Determining the start time of the effect
   // default option : 0
+  // delayStart : 0s | second
   
   delay : 0.05,
   // Determine when to move between items
   // default option : 0.05
+  // delay : 0.5s | second
   
   duration: 0.7,
   // Determine the speed of effect
   // default option : 0.7
+  // duration : 0.7s | second
   
   loop : true,
   // To repeat the effect infinitely
   // accept 2 options : true | false
   // default option : true
   
-  loopTime : 2000,
+  loopTime : 2,
   // Replay the effect after
-  // default option : 2000 ms
+  // default option : 2
+  // loopTime : 2s | second
   
   overflow: true,
   // Makes masking effect inside parent element
@@ -129,6 +148,8 @@ txt.animate('element',{
   // default option : true
 
 });
+
+// ----------------------------------------------------------------
 
 txt.scale('element',{
 
@@ -150,19 +171,63 @@ txt.scale('element',{
   delayStart: 0,
   // Determining the start time of the effect
   // default option : 0
+  // delayStart : 0s | second
   
   delay : 1.5,
   // Determine when to move between items
   // default option : 1.5
+  // delay : 1.5s | second
   
   duration: 2,
   // Determine the speed of effect
   // default option : 2
+  // duration : 2s | second
   
   loop : true,
   // To repeat the effect infinitely
   // accept 2 options : true | false
   // default option : true
+
+});
+
+// ----------------------------------------------------------------
+
+txt.overlay('element',{
+
+    // selector element
+    // Accepts a string or selector element
+    // You can specify a class directly || txt.animate('.element // .elements')
+    // Or you can add a javascript selector  || document.querySelector('.element') or document.querySelectorAll('.elements')
+
+
+  effect : 'overlay-1',
+  // Select the effect you want
+  // Accepts 3 options : overlay-1 | overlay-2 | overlay-3
+  // default option : overlay-1
+  
+  delayStart: 0,
+  // Determining the start time of the effect
+  // default option : 0
+  // delayStart : 0s | second
+  
+  loop : true,
+  // To repeat the effect infinitely
+  // accept 2 options : true | false
+  // default option : true
+  
+  loopTime : 5,
+  // Replay the effect after
+  // default option : 5s
+  // loopTime : 5s | second
+  
+  overlayColor: '#000',
+  // add background color for overlay
+  // default option : '#000'
+
+  outTime: 3,
+  // Waiting time for the exit effect to be applied
+  // default option : 3
+  // outTime : 3s | second
 
 });
 ````
