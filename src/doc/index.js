@@ -49,14 +49,14 @@ class MySite {
         txt.animate(d_2, {
             effect : 'tx-an-2',
             loop : true,
-            loopTime : 2300,
+            loopTime : 2.3,
             delay : 0.07
         })
 
         txt.animate(d_3, {
             effect : 'tx-an-3',
             loop : true,
-            loopTime : 5000,
+            loopTime : 5,
             delay : 0.3,
             overflow : false
         })
@@ -69,13 +69,13 @@ class MySite {
         txt.animate(d_5, {
             effect : 'tx-an-5',
             loop : true,
-            loopTime : 1700,
+            loopTime : 1.7,
         })
 
         txt.animate(d_6, {
             effect : 'tx-an-6',
             loop : true,
-            loopTime : 4000,
+            loopTime : 4,
             delay : 0.1,
             overflow : false
         })
@@ -83,25 +83,25 @@ class MySite {
         txt.animate(d_7, {
             effect : 'tx-an-7',
             loop : true,
-            loopTime : 2100
+            loopTime : 2.1
         })
 
         txt.animate(d_8, {
             effect : 'tx-an-8',
             loop : true,
-            loopTime : 2300
+            loopTime : 2.3
         })
 
         txt.animate(d_9, {
             effect : 'tx-an-9',
             loop : true,
-            loopTime : 2000,
+            loopTime : 2,
         })
 
         txt.animate(d_10, {
             effect : 'tx-an-10',
             loop : true,
-            loopTime : 1700,
+            loopTime : 1.7,
             delay: 0,
         })
 
