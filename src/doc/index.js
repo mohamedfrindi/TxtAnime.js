@@ -102,6 +102,7 @@ class MySite {
             effect : 'tx-an-10',
             loop : true,
             loopTime : 1.7,
+            duration : 2,
             delay: 0,
         })
 
