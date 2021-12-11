@@ -9,12 +9,12 @@ const mode_development = {
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'TxtAnime.js',
-            library: {
-                name: 'TxtAnime',
-                type: 'umd',
-                export: 'default',
-                umdNamedDefine: true,
-            },
+            // library: {
+            //     name: 'TxtAnime',
+            //     type: 'umd',
+            //     export: 'default',
+            //     umdNamedDefine: true,
+            // },
         },
 
         module: {
@@ -35,12 +35,12 @@ const mode_production = {
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'TxtAnime-min.js',
-            library: {
-                name: 'TxtAnime',
-                type: 'umd',
-                export: 'default',
-                umdNamedDefine: true,
-            },
+            // library: {
+            //     name: 'TxtAnime',
+            //     type: 'umd',
+            //     export: 'default',
+            //     umdNamedDefine: true,
+            // },
         },
 
         module: {
