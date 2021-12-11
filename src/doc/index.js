@@ -1,6 +1,7 @@
 import './../index';
 // site index.scss
 import './index.scss'
+import './responsive.scss'
 // hljs code disign
 import './hljs.scss'
 
@@ -16,6 +17,7 @@ class MySite {
 
     run () {
         this.addEffect()
+        this.menuBar()
     }
 
     addEffect () {
@@ -131,6 +133,20 @@ class MySite {
             overlayColor : '#FFC716',
         })
 
+    }
+
+    menuBar () {
+        let btn_menu = document.querySelector('.btn-menu');
+        let btn_menu_close = document.querySelector('.btn-menu-close');
+        let nav_bar = document.querySelector('.nav-bar');
+
+        btn_menu.addEventListener('click' , function () {
+            nav_bar.classList.add('responseve')
+            nav_bar.classList.remove('hide')
+        })
+        btn_menu_close.addEventListener('click' , function () {
+            nav_bar.classList.add('hide')
+        })
     }
 }
 
