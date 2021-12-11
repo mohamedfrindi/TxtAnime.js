@@ -218,9 +218,13 @@ txt.overlay('element',{
   // default option : 5s
   // loopTime : 5s | second
   
-  overlayColor: '#000',
+  overlayColor: '#03a9f4',
   // add background color for overlay
-  // default option : '#000'
+  // default option : '#03a9f4'
+
+  textColor : '#161414',
+  // change text color
+  // default option : '#161414'
 
   outTime: 3,
   // Waiting time for the exit effect to be applied
