@@ -128,6 +128,7 @@ function TxtAnime () {
             // parent styles
             elmnt.forEach((el) => {
                 el.style.position = 'relative';
+                el.style.display = 'flex';
             });
             
             // creat spn on div
@@ -212,7 +213,8 @@ function TxtAnime () {
         // default options
         this.default = {
             effect : 'overlay-1',
-            overlayColor : 'black',
+            overlayColor : '#03a9f4',
+            textColor : '#161414',
             loop : true,
             loopTime : 5,
             outTime : 3,
@@ -226,6 +228,7 @@ function TxtAnime () {
         let elmnt = this.el;
         let effect = this.options.effect;
         let overlayColor = this.options.overlayColor;
+        let textColor = this.options.textColor;
         let outTime = this.options.outTime;
         let loop = this.options.loop;
         let loopTime = this.options.loopTime;
@@ -245,6 +248,7 @@ function TxtAnime () {
                     let elContent = el.textContent;
                     el.textContent = '';
                     let elSpn = document.createElement('span');
+                    elSpn.style.color = textColor
                     elSpn.innerHTML = elContent;
                     el.appendChild(elSpn);
 

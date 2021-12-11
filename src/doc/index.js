@@ -121,16 +121,19 @@ class MySite {
         txt.overlay(d_13, {
             effect : 'overlay-1',
             overlayColor : '#d9b1a8',
+            textColor : '#5a5a5a'
         })
 
         txt.overlay(d_14, {
             effect : 'overlay-2',
             overlayColor : '#b8b5dd',
+            textColor : '#5a5a5a'
         })
 
         txt.overlay(d_15, {
             effect : 'overlay-3',
             overlayColor : '#FFC716',
+            textColor : '#5a5a5a'
         })
 
     }

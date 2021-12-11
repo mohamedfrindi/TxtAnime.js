@@ -187,7 +187,7 @@
 }
 
 .scale-1{
-    display: block;
+    display: inline-block;
     animation: scale-1 var(--easeOutThree) forwards;
     opacity: 0;
     transform-origin: center;
@@ -209,7 +209,7 @@
     }
 }
 .scale-2{
-    display: block;
+    display: inline-block;
     animation: scale-2 var(--easeOutThree) forwards;
     opacity: 0;
     transform-origin: center;
@@ -232,6 +232,7 @@
 }
 
 .parent-overlay-1{
+    display: inline-block;
     position: relative;
     overflow: hidden;
     padding: 0 10px;
@@ -303,6 +304,7 @@
     }
 }
 .parent-overlay-2{
+    display: inline-block;
     position: relative;
     overflow: hidden;
     border-radius: 3px;
@@ -369,6 +371,7 @@
     }
 }
 .parent-overlay-3{
+    display: inline-block;
     position: relative;
     overflow: hidden;
     padding: 0 10px;
