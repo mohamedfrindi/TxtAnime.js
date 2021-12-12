@@ -27,7 +27,7 @@ const { TxtAnime } = require('txtanime.js');
 
 #### CDN
 ````html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mohamedfrindi/TxtAnime.js/dist/TxtAnime-min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mohamedfrindi/TxtAnime.js/dist/TxtAnime.js"></script>
 ````
 
 <br>
