@@ -129,6 +129,28 @@
                     h2 , div span{
                         font-size: 40px;
                     }
+
+                    h2 , div > span{
+                        font-size: 48px;
+                    }
+                    h3{
+                        font-size: 30px;
+                    }
+                    div {
+                        span , p{
+                            font-size: 25px;
+                        }
+                    }
+                    .d-11-scale{
+                        span{
+                            font-size: 30px;
+                        }
+                    }
+                    .d-12-scale{
+                        span{
+                            font-size: 30px;
+                        }
+                    }
                 }
                 .demo-code{
                     display: flex;
@@ -272,9 +294,31 @@
                     flex: 1;
                     height: 300px;
                     display: flex;
-    
+
                     h2 , div span{
                         font-size: 40px;
+                    }
+
+                    h2 , div > span{
+                        font-size: 48px;
+                    }
+                    h3{
+                        font-size: 30px;
+                    }
+                    div {
+                        span , p{
+                            font-size: 25px;
+                        }
+                    }
+                    .d-11-scale{
+                        span{
+                            font-size: 30px;
+                        }
+                    }
+                    .d-12-scale{
+                        span{
+                            font-size: 30px;
+                        }
                     }
                 }
                 .demo-code{
@@ -308,7 +352,29 @@
                     display: flex;
     
                     h2 , div span{
+                        font-size: 40px;
+                    }
+
+                    h2 , div > span{
                         font-size: 48px;
+                    }
+                    h3{
+                        font-size: 30px;
+                    }
+                    div {
+                        span , p{
+                            font-size: 25px;
+                        }
+                    }
+                    .d-11-scale{
+                        span{
+                            font-size: 30px;
+                        }
+                    }
+                    .d-12-scale{
+                        span{
+                            font-size: 30px;
+                        }
                     }
                 }
                 .demo-code{
@@ -341,7 +407,29 @@
                     display: flex;
     
                     h2 , div span{
-                        font-size: 45px;
+                        font-size: 40px;
+                    }
+
+                    h2 , div > span{
+                        font-size: 48px;
+                    }
+                    h3{
+                        font-size: 30px;
+                    }
+                    div {
+                        span , p{
+                            font-size: 25px;
+                        }
+                    }
+                    .d-11-scale{
+                        span{
+                            font-size: 30px;
+                        }
+                    }
+                    .d-12-scale{
+                        span{
+                            font-size: 30px;
+                        }
                     }
                 }
                 .demo-code{
