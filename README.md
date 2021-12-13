@@ -257,7 +257,7 @@ txt.typed('element',{
   effect : 'typed-1',
   // Select the effect you want
   // Accepts 3 options : typed-1 | typed-2 | typed-3
-  // default option : overlay-1
+  // default option : typed-1
 
   text : ['Typed for TxtAnime' , 'Try free' , 'JavaScript Plugin'],
   // The words you want to apply the effect to
