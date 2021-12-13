@@ -30,6 +30,10 @@
     <h2 class="overlay-2">Testing</h2>
     <h2 class="overlay-3">Testing</h2>
 
+    <!-- test txt.typed() -->
+    <div class="typ-1"></div>
+    <div class="typ-2"></div>
+    <div class="typ-3"></div>
 
     <!-------------- script ---------------->
     <script src="/dist/TxtAnime.js"></script>
@@ -90,6 +94,19 @@
         })
         txt.overlay('.overlay-3', {
             effect : 'overlay-3',
+        })
+
+        // test txt.typed
+        txt.typed('.typ-1' , {
+            effect : 'typed-1'
+        })
+        txt.typed('.typ-2' , {
+            effect : 'typed-2',
+            loopTime : 2,
+            typedSpeed : 0.01
+        })
+        txt.typed('.typ-3' , {
+            effect : 'typed-3'
         })
 
     </script>
