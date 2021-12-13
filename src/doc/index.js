@@ -35,8 +35,8 @@ class MySite {
         let d_10 = document.querySelector('.d-10 .demo-view h2');
 
         // txt.scale()
-        let d_11 = document.querySelector('.d-11 .demo-view .tx');
-        let d_12 = document.querySelector('.d-12 .demo-view .tx');
+        let d_11 = document.querySelector('.d-11 .demo-view .d-11-scale');
+        let d_12 = document.querySelector('.d-12 .demo-view .d-12-scale');
 
         // txt.overlay()
         let d_13 = document.querySelector('.d-13 .demo-view h2');
