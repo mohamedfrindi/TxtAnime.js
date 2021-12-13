@@ -52,7 +52,10 @@ const { TxtAnime } = require('txtanime.js');
     <div class="txt"></div>
 
     <!-- In case you want to implement txt.overlay() -->
-    <h2 class="element">Animation</h2>
+    <h2 class="overlay">Animation</h2>
+
+    <!-- In case you want to implement txt.typed() -->
+    <div class="typed"></div>
 
 </body>
 
@@ -70,7 +73,11 @@ const { TxtAnime } = require('txtanime.js');
         // options
     })
     // or 
-    txt.overlay('.txt' , {
+    txt.overlay('.overlay' , {
+        // options
+    })
+    // or 
+    txt.typed('.typed' , {
         // options
     })
 
@@ -93,6 +100,10 @@ txt.scale('.element' , {
 })
 // or
 txt.overlay('.element' , {
+    // opions
+})
+// or 
+txt.typed('.element' , {
     // opions
 })
 ````
@@ -230,6 +241,46 @@ txt.overlay('element',{
   // Waiting time for the exit effect to be applied
   // default option : 3
   // outTime : 3s | second
+
+});
+
+// ----------------------------------------------------------------
+
+txt.typed('element',{
+
+    // selector element
+    // Accepts a string or selector element
+    // You can specify a class directly || txt.animate('.element // .elements')
+    // Or you can add a javascript selector  || document.querySelector('.element') or document.querySelectorAll('.elements')
+
+
+  effect : 'typed-1',
+  // Select the effect you want
+  // Accepts 3 options : typed-1 | typed-2 | typed-3
+  // default option : overlay-1
+
+  text : ['Typed for TxtAnime' , 'Try free' , 'JavaScript Plugin'],
+  // The words you want to apply the effect to
+  // default option : ['Typed for TxtAnime' , 'Try free' , 'JavaScript Plugin']
+
+  typedStart: 0,
+  // Determining the start time of the effect
+  // default option : 0
+  // delayStart : 0s | second
+  
+  loopTime : 3,
+  // Replay the effect after
+  // default option : 3s
+  // loopTime : 3s | second
+
+  typedSpeed : 0.05,
+  // set speed typed
+  // default option : 0.05
+
+  outTime: 1,
+  // Waiting time for the exit effect to be applied
+  // default option : 1
+  // outTime : 1s | second
 
 });
 ````
