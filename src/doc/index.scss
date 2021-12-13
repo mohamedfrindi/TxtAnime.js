@@ -48,11 +48,16 @@ $d-14 : #D5D2F8;
 
 $d-15 : #FFEAA8;
 
+$d-16 : #D7E7E9;
+
+$d-17 : #D4EAFF;
+
+$d-18 : #F3CEC7;
 
 
 
 // for class
-$colors : $d-1 $d-2 $d-3 $d-4 $d-5 $d-6 $d-7 $d-8 $d-9 $d-10 $d-11 $d-12 $d-13 $d-14 $d-15;
+$colors : $d-1 $d-2 $d-3 $d-4 $d-5 $d-6 $d-7 $d-8 $d-9 $d-10 $d-11 $d-12 $d-13 $d-14 $d-15 $d-16 $d-17 $d-18;
 
 
 // globals style
@@ -169,11 +174,37 @@ button{
                 justify-content: center;
                 overflow: hidden;
 
-                h2 , div span{
+                h2 , div > span{
                     font-size: 48px;
                     font-weight: 900;
                     letter-spacing: .25px;
                     color: $color-dark;
+                }
+                h3{
+                    color: $color-dark;
+                    font-size: 30px;
+                }
+                div {
+                    display: flex;
+                    
+                    > span {
+                        color: #9e9e9e;
+                    }
+                    span , p{
+                        font-size: 25px;
+                        font-weight: 600;
+                        letter-spacing: .25px;
+                    }
+                    p{
+                        padding-right: 10px;
+                        color: $color-dark;
+                    }
+                }
+                .d-17-type{
+                    color: #2196f3;
+                }
+                .d-18-type {
+                    color: #c93c3c;
                 }
             }
             .demo-code{
@@ -186,7 +217,7 @@ button{
                 pre {
                     background: #FFFFFF;
                     padding: 0 30px;
-                    width: 50%;
+                    width: 60%;
 
                     code{
                         line-height: 1.8;

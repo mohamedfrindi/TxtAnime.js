@@ -294,6 +294,219 @@ function TxtAnime () {
         },delayStart * 1000);
     };
 
+    this.typed = function (element , options) {
+        // selector
+        if (typeof element === 'string') {
+            this.el = Array.from(document.querySelectorAll(element));
+        }else if (typeof element === 'object') {
+
+            if (element instanceof NodeList) {
+                this.el = Array.from(element);
+            }else if (element instanceof Element) {
+                this.el = [element];
+            }
+
+        }
+
+        // default options
+        this.default = {
+            effect : 'typed-1',
+            text : ['Typed for TxtAnime' , 'Try free' , 'JavaScript Plugin'],
+            typedSpeed : 0.05,
+            timeOut : 1,
+            loopTime : 3,
+            typedStart : 0
+        };
+
+        // options
+        this.options = Object.assign(this.default , options);
+
+        // functions
+        let elmnt = this.el;
+        let effect = this.options.effect;
+        let text = this.options.text;
+        let typedSpeed = this.options.typedSpeed
+        let timeOut = this.options.timeOut
+        let loopTime = this.options.loopTime
+        let typedStart = this.options.typedStart
+
+        // functions
+        function typedStartFunc () {
+
+            // add efect for spn 
+            elmnt.forEach((el) => {
+
+                if (effect == 'typed-1' || effect == 'typed-2') {
+                    typedFuncOne()
+                }
+
+                if (effect == 'typed-3') {
+                    typedFuncTwo()
+                }
+
+                // typed func one and two
+                function typedFuncOne() {
+
+                    // add to span for el 
+                    el.innerHTML = ''
+                    let spn = document.createElement('span');
+                    spn.classList.add(effect)
+                    el.appendChild(spn)
+
+                    // index start
+                    let index_start = 0;
+
+                    // creat func
+                    function startEffect(start) {
+
+                        // creat main span 
+                        let getSpan = el.querySelector('span')
+                        getSpan.textContent = text[start]
+
+                        // convert text content to array the spans
+                        getSpan.innerHTML = getSpan.textContent.replace(/\S/g , `<span>$&</span>`);
+
+                        let getAllSpans = Array.from(getSpan.querySelectorAll('span'))
+
+
+                        function spanHide() {
+
+                            getAllSpans.forEach((spn) => {
+                                spn.style.display = 'none'
+                            })
+
+                        }
+                        spanHide()
+
+                        function spanShow (spnStart) {
+                            getAllSpans[spnStart].style.display = 'inline-block'
+                        }
+                        spanShow (0)
+
+                        function spanHideOut() {
+                            
+                            let lastIndex = getAllSpans.length - 1
+
+                            function hideOut() {
+
+                                getAllSpans[lastIndex].style.display = 'none'
+
+                                let intervalOut = setInterval(() => {
+
+                                    lastIndex--
+
+                                    if (lastIndex <= 0) {
+                                        clearInterval(intervalOut)
+                                        getSpan.innerHTML = ''
+                                    }
+
+                                    getAllSpans[lastIndex].style.display = 'none'
+
+                                },typedSpeed * 1000)
+                            }
+
+                            setTimeout(() => {
+                                hideOut()
+                            },timeOut * 1000)
+                        }
+
+                        let indexStart = 0;
+                        let interval = setInterval(() => {
+
+                            indexStart++
+
+                            if (indexStart > getAllSpans.length - 1) {
+                                clearInterval(interval)
+                                spanHideOut()
+                            }else{
+                                spanShow(indexStart)
+                            }
+
+                        },typedSpeed * 1000)
+
+                    }
+
+                    // startEffect(index_start)
+
+                    let moveinterval = setInterval(() => {
+
+                        index_start++;
+
+                        if (index_start > text.length) {
+
+                            index_start = 0
+
+                        }else{
+
+                        startEffect(index_start - 1)
+
+                    }
+
+                    },loopTime * 1000)
+
+                }
+
+                // typed func three
+                function typedFuncTwo() {
+
+                    // add to span for el 
+                    el.innerHTML = ''
+
+                    for (let i = 0 ; i < text.length ; i++) {
+
+                        let spn = document.createElement('span');
+
+                        spn.textContent = text[i]
+
+                        el.appendChild(spn)
+
+                    }
+
+                    // creat func start effect
+                    function startEffectTwo(start) {
+
+                        // el style
+                        el.style.overflow = 'hidden'
+
+                        // select all children span the el
+                        let spans = Array.from(el.querySelectorAll('span'))
+
+                        // hide all spans
+                        spans.forEach((spn) => {
+                            spn.classList.add(`${effect}`)
+
+                            spn.style.animationDuration = `${typedSpeed}s`
+                        })
+                        spans[start].classList.add('show')
+
+                        setInterval(() => {
+
+                            spans[start].classList.remove('show')
+
+                            start++
+
+                            if (start > text.length - 1) {
+                                start = 0
+                            }
+
+                            spans[start].classList.add('show')
+
+                        }, loopTime * 1000)
+                    }
+
+                    startEffectTwo(0)
+
+                }
+
+            })
+
+        }
+
+        setTimeout(() => {
+            typedStartFunc()
+        }, typedStart * 1000)
+    }
+
 }
 
 export {TxtAnime}

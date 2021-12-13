@@ -454,3 +454,49 @@
         }
     }
 }
+
+.typed-1{
+    position: relative;
+
+    &::after{
+        content: '|';
+        animation: .5s typed-1 ease-in-out infinite;
+    }
+
+    @keyframes typed-1{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+.typed-2{
+    position: relative;
+
+    &::after{
+        content: '|';
+        opacity: .5;
+    }
+}
+.typed-3{
+    position: relative;
+    display: none;
+
+    &.show{
+        animation: typed-3-show var(--easeOutCirc) forwards;
+        display: block;
+
+        @keyframes typed-3-show {
+            0%{
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+}
