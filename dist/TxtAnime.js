@@ -524,6 +524,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "TxtAnime": () => (/* binding */ TxtAnime)
 /* harmony export */ });
 function TxtAnime () {
+    // regex
+    const re = /(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0]|\ud83c[\udffb-\udfff])?(?:\u200d(?:[^\ud800-\udfff]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff])[\ufe0e\ufe0f]?(?:[\u0300-\u036f\ufe20-\ufe23\u20d0-\u20f0]|\ud83c[\udffb-\udfff])?)*|\S/g
 
     this.animate = function(element , options) {
 
@@ -571,7 +573,7 @@ function TxtAnime () {
             elmnt.forEach((el) => {
 
                 // replace text or span
-                el.innerHTML = el.textContent.replace(/\S/g , `<span>$&</span>`);
+                el.innerHTML = el.textContent.replace(re, `<span>$&</span>`);
     
                 let spn = Array.from(el.querySelectorAll('span'));
     
@@ -889,7 +891,7 @@ function TxtAnime () {
                         getSpan.textContent = text[start]
 
                         // convert text content to array the spans
-                        getSpan.innerHTML = getSpan.textContent.replace(/\S/g , `<span>$&</span>`);
+                        getSpan.innerHTML = getSpan.textContent.replace(re, `<span>$&</span>`);
 
                         let getAllSpans = Array.from(getSpan.querySelectorAll('span'))
 
