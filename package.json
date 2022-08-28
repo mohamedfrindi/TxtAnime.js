@@ -8,7 +8,7 @@
     "watch-plugin": "webpack --config webpack.config.js --watch",
     "build-site": "webpack --config site.config.js",
     "watch-site": "webpack --config site.config.js --watch",
-    "entry": "rollup --input src/index.js --file entry.js --plugin postcss --format umd --name TxtAnime" 
+    "entry": "rollup --input src/index.js --file entry.js --plugin postcss --format umd --name TxtAnime"
   },
   "keywords": [
     "javascript",
