@@ -1,4 +1,4 @@
-import './../index';
+import '../../dist/TxtAnime';
 // site index.scss
 import './index.scss'
 import './responsive.scss'

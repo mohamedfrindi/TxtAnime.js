@@ -2,13 +2,13 @@
   "name": "txtanime.js",
   "version": "1.0.9",
   "description": "It is a JavaScript library, which contains many beautiful and free text effects.",
-  "main": "./dist/TxtAnime.js",
+  "main": "./dist/TxtAnime-es.js",
   "scripts": {
     "build-plugin": "webpack --config webpack.config.js",
     "watch-plugin": "webpack --config webpack.config.js --watch",
     "build-site": "webpack --config site.config.js",
     "watch-site": "webpack --config site.config.js --watch",
-    "entry": "rollup --input src/index.js --file entry.js --plugin postcss --format umd --name TxtAnime"
+    "build-entry": "npx rollup --input src/index.js --file ./dist/TxtAnime-es.js --plugin postcss --format es --name TxtAnime"
   },
   "keywords": [
     "javascript",
@@ -30,7 +30,7 @@
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "node-sass": "^6.0.1",
-    "rollup": "^2.60.2",
+    "rollup": "^2.79.0",
     "rollup-plugin-postcss": "^4.0.2",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",
