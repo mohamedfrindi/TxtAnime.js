@@ -1,8 +1,8 @@
 {
   "name": "txtanime.js",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "It is a JavaScript library, which contains many beautiful and free text effects.",
-  "main": "entry.js",
+  "main": "./dist/TxtAnime.js",
   "scripts": {
     "build-plugin": "webpack --config webpack.config.js",
     "watch-plugin": "webpack --config webpack.config.js --watch",
