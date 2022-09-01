@@ -60,12 +60,14 @@ function TxtAnime () {
                 function startAnime() {
                     spn.forEach((tx , index) => {
 
-                        if (overflow == true) {
-                            tx.parentNode.style.overflow = 'hidden';
+                        if (tx.parentNode) {
+                            if (overflow == true) {
+                                tx.parentNode.style.overflow = 'hidden';
+                            }
+    
+                            tx.parentNode.style.display = 'block';
+                            tx.parentNode.style.opacity = '1';
                         }
-
-                        tx.parentNode.style.display = 'block';
-                        tx.parentNode.style.opacity = '1';
     
                         tx.classList.add(effect);
                         tx.style.display = 'inline-flex';

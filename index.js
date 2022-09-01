@@ -604,12 +604,14 @@ function TxtAnime () {
                 function startAnime() {
                     spn.forEach((tx , index) => {
 
-                        if (overflow == true) {
-                            tx.parentNode.style.overflow = 'hidden';
+                        if (tx.parentNode) {
+                            if (overflow == true) {
+                                tx.parentNode.style.overflow = 'hidden';
+                            }
+    
+                            tx.parentNode.style.display = 'block';
+                            tx.parentNode.style.opacity = '1';
                         }
-
-                        tx.parentNode.style.display = 'block';
-                        tx.parentNode.style.opacity = '1';
     
                         tx.classList.add(effect);
                         tx.style.display = 'inline-flex';
@@ -1065,7 +1067,7 @@ function TxtAnime () {
 /******/ 	var __webpack_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_43374__(moduleId) {
+/******/ 	function __nested_webpack_require_43471__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
@@ -1079,7 +1081,7 @@ function TxtAnime () {
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_43374__);
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_43471__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -1089,11 +1091,11 @@ function TxtAnime () {
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__nested_webpack_require_43374__.n = (module) => {
+/******/ 		__nested_webpack_require_43471__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
 /******/ 				() => (module['default']) :
 /******/ 				() => (module);
-/******/ 			__nested_webpack_require_43374__.d(getter, { a: getter });
+/******/ 			__nested_webpack_require_43471__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
@@ -1101,9 +1103,9 @@ function TxtAnime () {
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__nested_webpack_require_43374__.d = (exports, definition) => {
+/******/ 		__nested_webpack_require_43471__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
-/******/ 				if(__nested_webpack_require_43374__.o(definition, key) && !__nested_webpack_require_43374__.o(exports, key)) {
+/******/ 				if(__nested_webpack_require_43471__.o(definition, key) && !__nested_webpack_require_43471__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -1112,13 +1114,13 @@ function TxtAnime () {
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__nested_webpack_require_43374__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 		__nested_webpack_require_43471__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__nested_webpack_require_43374__.r = (exports) => {
+/******/ 		__nested_webpack_require_43471__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -1128,7 +1130,7 @@ function TxtAnime () {
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
-/******/ 		__nested_webpack_require_43374__.nc = undefined;
+/******/ 		__nested_webpack_require_43471__.nc = undefined;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -1138,12 +1140,12 @@ var __webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-__nested_webpack_require_43374__.r(__webpack_exports__);
-/* harmony export */ __nested_webpack_require_43374__.d(__webpack_exports__, {
+__nested_webpack_require_43471__.r(__webpack_exports__);
+/* harmony export */ __nested_webpack_require_43471__.d(__webpack_exports__, {
 /* harmony export */   "TxtAnime": () => (/* reexport safe */ _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__.TxtAnime)
 /* harmony export */ });
-/* harmony import */ var _scss_TxtAnime_scss__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_43374__(/*! ./scss/TxtAnime.scss */ "./src/scss/TxtAnime.scss");
-/* harmony import */ var _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_43374__(/*! ./js/TxtAnime */ "./src/js/TxtAnime.js");
+/* harmony import */ var _scss_TxtAnime_scss__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_43471__(/*! ./scss/TxtAnime.scss */ "./src/scss/TxtAnime.scss");
+/* harmony import */ var _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_43471__(/*! ./js/TxtAnime */ "./src/js/TxtAnime.js");
 
 
 
