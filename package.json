@@ -1,6 +1,6 @@
 {
   "name": "txtanime.js",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "It is a JavaScript library, which contains many beautiful and free text effects.",
   "main" : "./dist/TxtAnime.common.js",
   "module": "./dist/TxtAnime.esm.js",
