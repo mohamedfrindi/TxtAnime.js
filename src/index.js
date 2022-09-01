@@ -1,4 +1,4 @@
-import './main.scss'
+import './scss/TxtAnime.scss';
 import { TxtAnime } from "./js/TxtAnime";
 
 if (typeof window !== 'undefined') {

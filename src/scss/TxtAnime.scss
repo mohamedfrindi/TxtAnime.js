@@ -1,27 +1,25 @@
-// transitions 
-:root{
+// transitions ==============================================
+// in out
 
-    // in out
+// in
 
-    // in
-
-    // out
-    --easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);  
-    --easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1); 
-    --easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);
-    --easeOutBack: cubic-bezier(0.34, 1.56, 0.64, 1); 
-    --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1); 
-    --easeOutOne: cubic-bezier(0.075, 0.82, 0.165, 1); 
-    --easeOutTwo: cubic-bezier(0.165, 0.84, 0.44, 1);  
-    --easeOutThree: cubic-bezier(0.09, 0.78, 0, 1.28); 
-}
+// out
+$easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);  
+$easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1); 
+$easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);
+$easeOutBack: cubic-bezier(0.34, 1.56, 0.64, 1); 
+$easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1); 
+$easeOutOne: cubic-bezier(0.075, 0.82, 0.165, 1); 
+$easeOutTwo: cubic-bezier(0.165, 0.84, 0.44, 1);  
+$easeOutThree: cubic-bezier(0.09, 0.78, 0, 1.28); 
+// =================x==============x===========================
 
 
 
 // Text Animations =========================================
 .tx-an-1{
     display: inline-block;
-    animation: tx-an-1 var(--easeOutOne) forwards;
+    animation: tx-an-1 $easeOutOne forwards;
     opacity: 0;
 
     @keyframes tx-an-1 {
@@ -37,7 +35,7 @@
 }
 .tx-an-2{
     display: inline-block;
-    animation: tx-an-2 var(--easeOutOne) forwards;
+    animation: tx-an-2 $easeOutOne forwards;
     opacity: 0;
 
     @keyframes tx-an-2 {
@@ -53,7 +51,7 @@
 }
 .tx-an-3{
     display: inline-block;
-    animation: tx-an-3 var(--easeOutOne) forwards;
+    animation: tx-an-3 $easeOutOne forwards;
     opacity: 0;
 
     @keyframes tx-an-3 {
@@ -71,7 +69,7 @@
 }
 .tx-an-4{
     display: inline-block;
-    animation: tx-an-4 var(--easeOutOne) forwards;
+    animation: tx-an-4 $easeOutOne forwards;
     opacity: 0;
 
     @keyframes tx-an-4 {
@@ -87,7 +85,7 @@
 }
 .tx-an-5{
     display: inline-block;
-    animation: tx-an-5 var(--easeOutOne) forwards;
+    animation: tx-an-5 $easeOutOne forwards;
     opacity: 0;
 
     @keyframes tx-an-5 {
@@ -103,7 +101,7 @@
 }
 .tx-an-6{
     display: inline-block;
-    animation: tx-an-6 var(--easeOutBack) forwards;
+    animation: tx-an-6 $easeOutBack forwards;
     opacity: 0;
 
     @keyframes tx-an-6 {
@@ -119,7 +117,7 @@
 }
 .tx-an-7{
     display: inline-block;
-    animation: tx-an-7 var(--easeOutCirc) forwards;
+    animation: tx-an-7 $easeOutCirc forwards;
     opacity: 0;
 
     @keyframes tx-an-7 {
@@ -133,7 +131,7 @@
 }
 .tx-an-8{
     display: inline-block;
-    animation: tx-an-8 var(--easeOutQuart) forwards;
+    animation: tx-an-8 $easeOutQuart forwards;
     opacity: 0;
 
     @keyframes tx-an-8 {
@@ -149,7 +147,7 @@
 }
 .tx-an-9{
     display: inline-block;
-    animation: tx-an-9 var(--easeOutQuart) forwards;
+    animation: tx-an-9 $easeOutQuart forwards;
     opacity: 0;
 
     @keyframes tx-an-9 {
@@ -165,7 +163,7 @@
 }
 .tx-an-10{
     display: inline-block;
-    animation: tx-an-10 var(--easeOutCirc) forwards;
+    animation: tx-an-10 $easeOutCirc forwards;
     opacity: 0;
 
     @keyframes tx-an-10 {
@@ -188,7 +186,7 @@
 
 .scale-1{
     display: inline-block;
-    animation: scale-1 var(--easeOutThree) forwards;
+    animation: scale-1 $easeOutThree forwards;
     opacity: 0;
     transform-origin: center;
 
@@ -210,7 +208,7 @@
 }
 .scale-2{
     display: inline-block;
-    animation: scale-2 var(--easeOutThree) forwards;
+    animation: scale-2 $easeOutThree forwards;
     opacity: 0;
     transform-origin: center;
 
@@ -243,7 +241,7 @@
         position: relative;
         z-index: 2; 
         mix-blend-mode: hard-light;
-        animation: 1s spn-overlay-1 var(--easeOutOne) both;
+        animation: 1s spn-overlay-1 $easeOutOne both;
         opacity: 0;
 
         @keyframes spn-overlay-1 {
@@ -258,7 +256,7 @@
         }
 
         &.out{
-            animation: 0.8s spn-overlay-out-1 var(--easeOutQuart) both;
+            animation: 0.8s spn-overlay-out-1 $easeOutQuart both;
 
             @keyframes spn-overlay-out-1{
                 0%{
@@ -279,7 +277,7 @@
         width: 100%;
         height: 100%;
         z-index: 0;
-        animation: 1s overlay-1 var(--easeOutOne) forwards; 
+        animation: 1s overlay-1 $easeOutOne forwards; 
 
         @keyframes overlay-1 {
             100% {
@@ -288,7 +286,7 @@
         }
 
         &.out{
-            animation: 0.8s overlay-out-1 var(--easeOutQuart) forwards;
+            animation: 0.8s overlay-out-1 $easeOutQuart forwards;
 
             @keyframes overlay-out-1 {
                 0% {
@@ -314,7 +312,7 @@
         position: relative;
         z-index: 2; 
         mix-blend-mode: hard-light;
-        animation: 1s spn-overlay-2 var(--easeOutOne) both;
+        animation: 1s spn-overlay-2 $easeOutOne both;
         opacity: 0;
 
         @keyframes spn-overlay-2 {
@@ -329,7 +327,7 @@
         }
 
         &.out{
-            animation: 0.8s spn-overlay-out-2 var(--easeOutQuart) both;
+            animation: 0.8s spn-overlay-out-2 $easeOutQuart both;
 
             @keyframes spn-overlay-out-2{
                 0%{
@@ -350,7 +348,7 @@
         width: 100%;
         height: 100%;
         z-index: 0;
-        animation: 1s overlay-2 var(--easeOutCirc) forwards;
+        animation: 1s overlay-2 $easeOutCirc forwards;
 
         @keyframes overlay-2 {
             100% {
@@ -359,7 +357,7 @@
         }
 
         &.out{
-            animation: 0.8s overlay-out-2 var(--easeOutQuart) forwards;
+            animation: 0.8s overlay-out-2 $easeOutQuart forwards;
 
             @keyframes overlay-out-2 {
                 100% {
@@ -380,7 +378,7 @@
         display: block;
         position: relative;
         z-index: 1;
-        animation: 2s spn-overlay-3 var(--easeOutTwo) both;animation-delay: .7s;
+        animation: 2s spn-overlay-3 $easeOutTwo both;animation-delay: .7s;
         opacity: 0;
 
         @keyframes spn-overlay-3 {
@@ -395,7 +393,7 @@
         }
 
         &.out {
-            animation: 1s spn-overlay-out-3 var(--easeOutOne) both;
+            animation: 1s spn-overlay-out-3 $easeOutOne both;
             animation-delay: .1s;
 
             @keyframes spn-overlay-out-3 {
@@ -417,7 +415,7 @@
         left: 0;   
         height: 100%;    
         z-index: 2;    
-        animation: 1.2s overlay-3 var(--easeOutCirc) forwards;
+        animation: 1.2s overlay-3 $easeOutCirc forwards;
         
         @keyframes overlay-3 {
             0% {
@@ -435,7 +433,7 @@
         }
 
         &.out{
-            animation: 1.4s overlay-out-3 var(--easeOutQuart) forwards;
+            animation: 1.4s overlay-out-3 $easeOutQuart forwards;
 
             @keyframes overlay-out-3 {
                 0% {
@@ -485,7 +483,7 @@
     display: none;
 
     &.show{
-        animation: typed-3-show var(--easeOutCirc) forwards;
+        animation: typed-3-show $easeOutCirc forwards;
         display: block;
 
         @keyframes typed-3-show {

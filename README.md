@@ -5,6 +5,8 @@ It is a JavaScript library, which contains many beautiful and free text effects.
 
 <h2><a href="https://mohamedfrindi.github.io/TxtAnime.js/">Demo</a></h2>
 
+<video src="./txtanime.mp4" autoplay style="width : 100%"></video>
+
 <br>
 
 # Installation
@@ -36,7 +38,7 @@ const { TxtAnime } = require('txtanime.js');
 ````html
 <script type="text/javascript" src="dist/TxtAnime.js"></script>
 <!-- or -->
-<script type="text/javascript" src="dist/TxtAnime-min.js"></script>
+<script type="text/javascript" src="dist/TxtAnime.min.js"></script>
 ````
 
 <br>
@@ -60,7 +62,7 @@ const { TxtAnime } = require('txtanime.js');
 </body>
 
 
-<script type="text/javascript" src="dist/TxtAnime-min.js"></script>
+<script type="text/javascript" src="dist/TxtAnime.min.js"></script>
 <script>
 
     let txt = new TxtAnime()
