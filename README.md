@@ -13,7 +13,7 @@ It is a JavaScript library, which contains many beautiful and free text effects.
 
 ### npm
 ````
-npm install txtanime.js --save
+npm install txtanime.js
 ````
 ````javascript
 // ES 2015
@@ -45,17 +45,9 @@ const { TxtAnime } = require('txtanime.js');
 ````html
 <body>
 
-    <!-- In case you want to implement txt.animate() -->
     <h2 class="element">Animation</h2>
-
-    <!-- In case you want to implement txt.scale() -->
-    <div class="txt"></div>
-
-    <!-- In case you want to implement txt.overlay() -->
-    <h2 class="overlay">Animation</h2>
-
-    <!-- In case you want to implement txt.typed() -->
-    <div class="typed"></div>
+    <!-- or -->
+    <div class="element"></div>
 
 </body>
 
@@ -63,21 +55,7 @@ const { TxtAnime } = require('txtanime.js');
 <script type="text/javascript" src="dist/TxtAnime.min.js"></script>
 <script>
 
-    let txt = new TxtAnime()
-
-    txt.animate('.element' , {
-        // options
-    })
-    // or 
-    txt.scale('.txt' , {
-        // options
-    })
-    // or 
-    txt.overlay('.overlay' , {
-        // options
-    })
-    // or 
-    txt.typed('.typed' , {
+    new TxtAnime(".element" , {
         // options
     })
 
@@ -88,23 +66,8 @@ const { TxtAnime } = require('txtanime.js');
 
 ##### To run TxtAnime.Js just add the following code in your <code>script</code>:
 ````javascript
-let txt = new TxtAnime()
-
-
-txt.animate('.element' , {
+new TxtAnime(".element" , {
     // options
-})
-// or
-txt.scale('.element' , {
-    // opions
-})
-// or
-txt.overlay('.element' , {
-    // opions
-})
-// or 
-txt.typed('.element' , {
-    // opions
 })
 ````
 
@@ -113,174 +76,148 @@ txt.typed('.element' , {
 
 ## Options
 ````javascript
-txt.animate('element',{
+new TxtAnime('.element',{
 
     // selector element
     // Accepts a string or selector element
-    // You can specify a class directly || txt.animate('.element // .elements')
+    // You can specify a class directly || new TxtAnime('.element // .elements')
     // Or you can add a javascript selector  || document.querySelector('.element') or document.querySelectorAll('.elements')
 
 
   effect : 'tx-an-1',
   // Select the effect you want
-  // Accepts 10 options : tx-an-1 <== 1-10
-  // default option : tx-an-1
+  // Accepts 10 options : txt-an-1 <== 1-9
+  // Data Type : string   
   
   delayStart: 0,
   // Determining the start time of the effect
-  // default option : 0
   // delayStart : 0s | second
+  // Data Type : number  
   
   delay : 0.05,
   // Determine when to move between items
-  // default option : 0.05
   // delay : 0.5s | second
+  // Data Type : number  
   
   duration: 0.7,
   // Determine the speed of effect
-  // default option : 0.7
   // duration : 0.7s | second
+  // Data Type : number  
   
-  loop : true,
+  repeat : true,
   // To repeat the effect infinitely
   // accept 2 options : true | false
-  // default option : true
+  // Data Type : boolean  
   
-  loopTime : 2,
+  repeatDelay : 2,
   // Replay the effect after
-  // default option : 2
-  // loopTime : 2s | second
-  
-  overflow: true,
-  // Makes masking effect inside parent element
-  // Accepts 2 options : false / true
-  // default option : true
+  // repeatDelay : 2s | second
+  // Data Type : number  
 
-});
-
-// ----------------------------------------------------------------
-
-txt.scale('element',{
-
-    // selector element
-    // Accepts a string or selector element
-    // You can specify a class directly || txt.animate('.element // .elements')
-    // Or you can add a javascript selector  || document.querySelector('.element') or document.querySelectorAll('.elements')
-
+  overlayBackground : "#004",
+  // background color overlay
+  // Accepts option : color
+  // Data Type : string
 
   text : ['Go' , 'To' , 'Site'],
   // The words you want to apply the effect to
-  // default option : ['Go' , 'To' , 'Site']
-
-  effect : 'scale-1',
-  // Select the effect you want
-  // currently Accepts 2 options : scale-1 | scale-2
-  // default option : scale-1
-  
-  delayStart: 0,
-  // Determining the start time of the effect
-  // default option : 0
-  // delayStart : 0s | second
-  
-  delay : 1.5,
-  // Determine when to move between items
-  // default option : 1.5
-  // delay : 1.5s | second
-  
-  duration: 2,
-  // Determine the speed of effect
-  // default option : 2
-  // duration : 2s | second
-  
-  loop : true,
-  // To repeat the effect infinitely
-  // accept 2 options : true | false
-  // default option : true
+  // Accepts option : array 
+  // Data Type : array  
 
 });
 
 // ----------------------------------------------------------------
+// default options ------------------------------------------------
 
-txt.overlay('element',{
+// txt-an-1
+new TxtAnime(".element" , {
+    effect: "txt-an-1",
+    delayStart: 0,
+    delay: 0.07,
+    duration: 0.7,
+    repeat: true,
+    repeatDelay: 1,
+})
 
-    // selector element
-    // Accepts a string or selector element
-    // You can specify a class directly || txt.animate('.element // .elements')
-    // Or you can add a javascript selector  || document.querySelector('.element') or document.querySelectorAll('.elements')
+// txt-an-2
+new TxtAnime(".element" , {
+    effect: "txt-an-2",
+    delayStart: 0,
+    delay: 0.5,
+    duration: 0.7,
+    repeat: true,
+    repeatDelay: 3,
+})
 
+// txt-an-3
+new TxtAnime(".element" , {
+    effect: "txt-an-3",
+    delayStart: 0,
+    delay: 0.1,
+    duration: 0.1,
+    repeat: true,
+    repeatDelay: 2,
+})
 
-  effect : 'overlay-1',
-  // Select the effect you want
-  // Accepts 3 options : overlay-1 | overlay-2 | overlay-3
-  // default option : overlay-1
-  
-  delayStart: 0,
-  // Determining the start time of the effect
-  // default option : 0
-  // delayStart : 0s | second
-  
-  loop : true,
-  // To repeat the effect infinitely
-  // accept 2 options : true | false
-  // default option : true
-  
-  loopTime : 5,
-  // Replay the effect after
-  // default option : 5s
-  // loopTime : 5s | second
-  
-  overlayColor: '#03a9f4',
-  // add background color for overlay
-  // default option : '#03a9f4'
+// txt-an-4
+new TxtAnime(".element" , {
+    effect: "txt-an-4",
+    delayStart: 0,
+    delay: 0,
+    duration: 1,
+    repeat: true,
+    text: ["Go", "To", "Site"],
+})
 
-  textColor : '#161414',
-  // change text color
-  // default option : '#161414'
+// txt-an-5
+new TxtAnime(".element" , {
+    effect: "txt-an-5",
+    delayStart: 0,
+    delay: 0,
+    duration: 1,
+    repeat: true,
+    text: ["Go", "To", "Site"],
+})
 
-  outTime: 3,
-  // Waiting time for the exit effect to be applied
-  // default option : 3
-  // outTime : 3s | second
+// txt-an-6
+new TxtAnime(".element" , {
+    effect: "txt-an-6",
+    delayStart: 0,
+    delay: 0.07,
+    duration: 2,
+    repeat: true,
+    repeatDelay: 3,
+    overlayBackground: "#03a9f4",
+})
 
-});
+// txt-an-7
+new TxtAnime(".element" , {
+    effect: "txt-an-7",
+    delayStart: 0,
+    delay: 0.05,
+    duration: 0.07,
+    repeat: true,
+    text: ["Try", "Free", "Typed"],
+})
 
-// ----------------------------------------------------------------
+// txt-an-8
+new TxtAnime(".element" , {
+    effect: "txt-an-8",
+    delayStart: 0,
+    delay: 0.05,
+    duration: 0.02,
+    repeat: true,
+    text: ["Designer", "Developer" , "Freelancer"],
+})
 
-txt.typed('element',{
+// txt-an-9
+new TxtAnime(".element" , {
+    effect: "txt-an-9",
+    delayStart: 0,
+    delay: 1,
+    duration: 0.5,
+    repeat: true,
+    text: ["Desinger", "Developer", "Freelancer"],
+})
 
-    // selector element
-    // Accepts a string or selector element
-    // You can specify a class directly || txt.animate('.element // .elements')
-    // Or you can add a javascript selector  || document.querySelector('.element') or document.querySelectorAll('.elements')
-
-
-  effect : 'typed-1',
-  // Select the effect you want
-  // Accepts 3 options : typed-1 | typed-2 | typed-3
-  // default option : typed-1
-
-  text : ['Typed for TxtAnime' , 'Try free' , 'JavaScript Plugin'],
-  // The words you want to apply the effect to
-  // default option : ['Typed for TxtAnime' , 'Try free' , 'JavaScript Plugin']
-
-  typedStart: 0,
-  // Determining the start time of the effect
-  // default option : 0
-  // delayStart : 0s | second
-  
-  loopTime : 3,
-  // Replay the effect after
-  // default option : 3s
-  // loopTime : 3s | second
-
-  typedSpeed : 0.05,
-  // set speed typed
-  // default option : 0.05
-
-  outTime: 1,
-  // Waiting time for the exit effect to be applied
-  // default option : 1
-  // outTime : 1s | second
-
-});
 ````

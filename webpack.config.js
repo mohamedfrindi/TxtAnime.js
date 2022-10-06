@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 
 
 // build umd files
@@ -25,24 +26,32 @@ const mode_development = {
 };
 
 const mode_production = {
-        entry: './src/index.js',
-        mode : 'production',
-        devtool: false,
+    entry: "./src/index.js",
+    mode: "production",
+    devtool: false,
 
-        output: {
-            path: path.resolve(__dirname, 'dist'),
-            filename: 'TxtAnime.min.js',
-        },
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename: "TxtAnime.min.js",
+    },
 
-        module: {
-            rules: [
-                {
-                    test: /\.s[ac]ss$/i,
-                    use: ["style-loader","css-loader","sass-loader"]
-                }
-            ]
-        },
-} 
+    optimization: {
+        minimizer: [
+            new TerserPlugin({
+                extractComments: false,
+            }),
+        ],
+    },
+
+    module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: ["style-loader", "css-loader", "sass-loader"],
+            },
+        ],
+    },
+}; 
 
 
 // build modules / esm and commonJs

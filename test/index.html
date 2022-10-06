@@ -4,110 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testeng</title>
+    <title>Testing</title>
 </head>
 <body>
-    
-    <!-- test txt.animate() -->
-    <h2 class="tx-an-1">Testing</h2>
-    <h2 class="tx-an-2">Testing</h2>
-    <h2 class="tx-an-3">Testing</h2>
-    <h2 class="tx-an-4">Testing</h2>
-    <h2 class="tx-an-5">Testing</h2>
-    <h2 class="tx-an-6">Testing</h2>
-    <h2 class="tx-an-7">Testing</h2>
-    <h2 class="tx-an-8">Testing</h2>
-    <h2 class="tx-an-9">Testing</h2>
-    <h2 class="tx-an-10">Testing</h2>
 
-
-    <!-- test txt.scale -->
-    <div class="tx-1"></div>
-    <div class="tx-2"></div>
-
-    <!-- test txt.overlay() -->
-    <h2 class="overlay-1">Testing</h2>
-    <h2 class="overlay-2">Testing</h2>
-    <h2 class="overlay-3">Testing</h2>
-
-    <!-- test txt.typed() -->
-    <div class="typ-1"></div>
-    <div class="typ-2"></div>
-    <div class="typ-3"></div>
+    <!--  -->
+    <h2 class="txt">Animation</h2>
 
     <!-------------- script ---------------->
-    <script src="../dist/TxtAnime.js"></script>
+    <script src="../dist/TxtAnime.min.js"></script>
     <script>
 
-        let txt = new TxtAnime();
-
-        // test txt.animate
-        txt.animate('.tx-an-1', {
-            effect : 'tx-an-1'
-        })
-        txt.animate('.tx-an-2', {
-            effect : 'tx-an-2'
-        })
-        txt.animate('.tx-an-3', {
-            effect : 'tx-an-3',
-            loop : true,
-            loopTime : 3,
-            delay : 0.3,
-            overflow : false
-        })
-        txt.animate('.tx-an-4', {
-            effect : 'tx-an-4'
-        })
-        txt.animate('.tx-an-5', {
-            effect : 'tx-an-5'
-        })
-        txt.animate('.tx-an-6', {
-            effect : 'tx-an-6'
-        })
-        txt.animate('.tx-an-7', {
-            effect : 'tx-an-7'
-        })
-        txt.animate('.tx-an-8', {
-            effect : 'tx-an-8'
-        })
-        txt.animate('.tx-an-9', {
-            effect : 'tx-an-9'
-        })
-        txt.animate('.tx-an-10', {
-            effect : 'tx-an-10'
-        })
-
-        // test txt.scale
-        txt.scale('.tx-1', {
-            effect : 'scale-1'
-        })
-        txt.scale('.tx-2', {
-            effect : 'scale-2',
-        })
-
-        // test txt.overlay
-        txt.overlay('.overlay-1', {
-            effect : 'overlay-1',
-        })
-        txt.overlay('.overlay-2', {
-            effect : 'overlay-2',
-        })
-        txt.overlay('.overlay-3', {
-            effect : 'overlay-3',
-        })
-
-        // test txt.typed
-        txt.typed('.typ-1' , {
-            effect : 'typed-1'
-        })
-        txt.typed('.typ-2' , {
-            effect : 'typed-2',
-            loopTime : 2,
-            typedSpeed : 0.01
-        })
-        txt.typed('.typ-3' , {
-            effect : 'typed-3'
-        })
+        let txt = new TxtAnime('.txt' , {
+            effect : "txt-an-2",
+        });
 
     </script>
 </body>

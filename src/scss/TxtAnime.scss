@@ -4,497 +4,206 @@
 // in
 
 // out
-$easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);  
-$easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1); 
+$easeOutExpo: cubic-bezier(0.16, 1, 0.3, 1);
+$easeOutQuad: cubic-bezier(0.5, 1, 0.89, 1);
 $easeOutQuart: cubic-bezier(0.25, 1, 0.5, 1);
-$easeOutBack: cubic-bezier(0.34, 1.56, 0.64, 1); 
-$easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1); 
-$easeOutOne: cubic-bezier(0.075, 0.82, 0.165, 1); 
-$easeOutTwo: cubic-bezier(0.165, 0.84, 0.44, 1);  
-$easeOutThree: cubic-bezier(0.09, 0.78, 0, 1.28); 
+$easeOutBack: cubic-bezier(0.34, 1.56, 0.64, 1);
+$easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
+$easeOutOne: cubic-bezier(0.075, 0.82, 0.165, 1);
+$easeOutTwo: cubic-bezier(0.165, 0.84, 0.44, 1);
+$easeOutThree: cubic-bezier(0.09, 0.78, 0, 1.28);
 // =================x==============x===========================
 
-
-
-// Text Animations =========================================
-.tx-an-1{
-    display: inline-block;
-    animation: tx-an-1 $easeOutOne forwards;
-    opacity: 0;
-
-    @keyframes tx-an-1 {
-        0%{
-            opacity: 0;
-            transform: translateY(150px) translateX(150px) rotate(200deg);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0) translateX(0) rotateZ(0);
-        }
-    }
-}
-.tx-an-2{
-    display: inline-block;
-    animation: tx-an-2 $easeOutOne forwards;
-    opacity: 0;
-
-    @keyframes tx-an-2 {
-        0%{
-            opacity: 0;
-            transform: translateY(-200px) translateX(150px) rotate(-280deg);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0) translateX(0) rotate(0);
-        }
-    }
-}
-.tx-an-3{
-    display: inline-block;
-    animation: tx-an-3 $easeOutOne forwards;
-    opacity: 0;
-
-    @keyframes tx-an-3 {
-        0%{
-            opacity: 0;
-            transform: translateX(100px) scale(10);
-            filter: blur(5);
-        }
-        100%{
-            opacity: 1;
-            transform: translateX(0) scale(1);
-            filter: blur(0);
-        }
-    }
-}
-.tx-an-4{
-    display: inline-block;
-    animation: tx-an-4 $easeOutOne forwards;
-    opacity: 0;
-
-    @keyframes tx-an-4 {
-        0%{
-            opacity: 0;
-            transform: translateX(100px);
-        }
-        100%{
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-}
-.tx-an-5{
-    display: inline-block;
-    animation: tx-an-5 $easeOutOne forwards;
-    opacity: 0;
-
-    @keyframes tx-an-5 {
-        0%{
-            opacity: 0;
-            transform: translateY(100px);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-}
-.tx-an-6{
-    display: inline-block;
-    animation: tx-an-6 $easeOutBack forwards;
-    opacity: 0;
-
-    @keyframes tx-an-6 {
-        0%{
-            opacity: 0;
-            transform: scale(0);
-        }
-        100%{
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-}
-.tx-an-7{
-    display: inline-block;
-    animation: tx-an-7 $easeOutCirc forwards;
-    opacity: 0;
-
-    @keyframes tx-an-7 {
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-}
-.tx-an-8{
-    display: inline-block;
-    animation: tx-an-8 $easeOutQuart forwards;
-    opacity: 0;
-
-    @keyframes tx-an-8 {
-        0%{
-            filter: blur(5px);
-            opacity: 0;
-        }
-        100%{
-            filter: blur(0px);
-            opacity: 1;
-        }
-    }
-}
-.tx-an-9{
-    display: inline-block;
-    animation: tx-an-9 $easeOutQuart forwards;
-    opacity: 0;
-
-    @keyframes tx-an-9 {
-        0%{
-            transform: scale(1.3);
-            opacity: 0;
-        }
-        100%{
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
-}
-.tx-an-10{
-    display: inline-block;
-    animation: tx-an-10 $easeOutCirc forwards;
-    opacity: 0;
-
-    @keyframes tx-an-10 {
-        0%{
-            opacity: 0;
-            transform: translateY(100px);
-        }
-        50%{
-            opacity: 1;
-            filter: blur(0px);
-            transform: translateY(0px);
-        }
-        100%{
-            opacity: 0;
-            filter: blur(1px);
-            transform: translateY(-100px) scale(0.8);
-        }
-    }
-}
-
-.scale-1{
-    display: inline-block;
-    animation: scale-1 $easeOutThree forwards;
-    opacity: 0;
-    transform-origin: center;
-
-    @keyframes scale-1 {
-        0%{
-            transform: scale(0);
-        }
-        50%{
-            filter: blur(0px);
-            opacity: 1;
-            transform: scale(1);
-        }
-        100%{
-            filter: blur(5px);
-            opacity: 0;
-            transform: scale(2);
-        }
-    }
-}
-.scale-2{
-    display: inline-block;
-    animation: scale-2 $easeOutThree forwards;
-    opacity: 0;
-    transform-origin: center;
-
-    @keyframes scale-2 {
-        0%{
-            filter: blur(5px);
-            transform: scale(5);
-        }
-        50%{
-            filter: blur(0px);
-            opacity: 1;
-            transform: scale(1.3);
-        }
-        100%{
-            opacity: 0;
-            transform: scale(0);
-        }
-    }
-}
-
-.parent-overlay-1{
-    display: inline-block;
-    position: relative;
+// Text Animations ============================================
+.txt-an-1 {
     overflow: hidden;
-    padding: 0 10px;
-    border-radius: 3px;
+    padding-right: 20px;
 
-    span{
-        display: block;
-        position: relative;
-        z-index: 2; 
-        mix-blend-mode: hard-light;
-        animation: 1s spn-overlay-1 $easeOutOne both;
+    span {
+        display: inline-block;
+        transform: translate(10px, 100%) rotate(-200deg);
         opacity: 0;
-
-        @keyframes spn-overlay-1 {
-            0%{
-                opacity: 0;
-                transform: translateX(-100%);
-            }
-            100%{
-                opacity: 1;  
-                transform: translateX(0%);
-            }
-        }
-
-        &.out{
-            animation: 0.8s spn-overlay-out-1 $easeOutQuart both;
-
-            @keyframes spn-overlay-out-1{
-                0%{
-                    opacity: 1;
-                    transform: translateX(0%);
-                }
-                100% {
-                    opacity: 0;  
-                    transform: translateX(100%); 
-                }
-            }
-        }
-    }
-    .overlay-1{
-        position: absolute;
-        top: 0;
-        left: 100%;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        animation: 1s overlay-1 $easeOutOne forwards; 
-
-        @keyframes overlay-1 {
-            100% {
-                left: -50%;
-            } 
-        }
-
-        &.out{
-            animation: 0.8s overlay-out-1 $easeOutQuart forwards;
-
-            @keyframes overlay-out-1 {
-                0% {
-                    opacity: 1;
-                    left: -50%; 
-                } 
-                100% {
-                    opacity: 0;
-                    left: -100%;
-                }
-            }
-        }
+        transform-origin: bottom;
     }
 }
-.parent-overlay-2{
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    border-radius: 3px;
-
-    span{
-        display: block;
-        position: relative;
-        z-index: 2; 
-        mix-blend-mode: hard-light;
-        animation: 1s spn-overlay-2 $easeOutOne both;
+.txt-an-2 {
+    span {
+        display: inline-block;
         opacity: 0;
-
-        @keyframes spn-overlay-2 {
-            0%{
-                opacity: 0;
-                transform: translateY(-100%);
-            }
-            100%{
-                opacity: 1;
-                transform: translateY(0%);
-            }
-        }
-
-        &.out{
-            animation: 0.8s spn-overlay-out-2 $easeOutQuart both;
-
-            @keyframes spn-overlay-out-2{
-                0%{
-                    opacity: 1;
-                    transform: translateY(0%);
-                }
-                100% {
-                    opacity: 0;  
-                    transform: translateY(100%); 
-                }
-            }
-        }
-    }
-    .overlay-2{
-        position: absolute;
-        top: 100%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        z-index: 0;
-        animation: 1s overlay-2 $easeOutCirc forwards;
-
-        @keyframes overlay-2 {
-            100% {
-                top: -100%;
-            } 
-        }
-
-        &.out{
-            animation: 0.8s overlay-out-2 $easeOutQuart forwards;
-
-            @keyframes overlay-out-2 {
-                100% {
-                    opacity: 0;
-                    left: -100%;
-                }
-            }
-        }
+        transform: scale(10);
+        filter: blur(5);
     }
 }
-.parent-overlay-3{
+.txt-an-3 {
+    // animation: tx-an-8 $easeOutQuart forwards;
+
+    span {
+        display: inline-block;
+        opacity: 0;
+        filter: blur(3px);
+    }
+
+    // @keyframes tx-an-8 {
+    //     0% {
+    //         filter: blur(5px);
+    //         opacity: 0;
+    //     }
+    //     100% {
+    //         filter: blur(0px);
+    //         opacity: 1;
+    //     }
+    // }
+}
+.txt-an-4 {
+    position: relative;
+
+    span {
+        display: inline-block;
+        position: absolute;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: center;
+    }
+}
+.txt-an-5 {
+    position: relative;
+
+    span {
+        display: inline-block;
+        position: absolute;
+        opacity: 0;
+        filter: blur(5px);
+        transform: scale(5);
+        transform-origin: center;
+    }
+
+}
+.txt-an-6 {
+    overflow: hidden;
     display: inline-block;
     position: relative;
-    overflow: hidden;
     padding: 0 10px;
 
     span {
         display: block;
-        position: relative;
         z-index: 1;
-        animation: 2s spn-overlay-3 $easeOutTwo both;animation-delay: .7s;
+        transform: translateX(100%);
         opacity: 0;
+        animation: spn-overlay-3 $easeOutTwo both;
 
         @keyframes spn-overlay-3 {
             0% {
                 opacity: 0;
-                transform: translateX(50px); 
+                transform: translateX(100%);
+                filter: blur(5px);
             }
             100% {
                 opacity: 1;
-                transform: translateX(0); 
-            } 
+                transform: translateX(0);
+                filter: blur(0px);
+            }
         }
 
         &.out {
-            animation: 1s spn-overlay-out-3 $easeOutOne both;
-            animation-delay: .1s;
+            // animation: 1s spn-overlay-out-3 $easeOutOne both;
+            // animation-delay: 0.1s;
 
             @keyframes spn-overlay-out-3 {
                 0% {
                     opacity: 1;
-                    transform: translateX(0px); 
+                    transform: translateX(0px);
                 }
                 100% {
                     opacity: 0;
-                    transform: translateX(100%); 
-                } 
+                    transform: translateX(100%);
+                }
             }
         }
     }
 
-    .overlay-3{
+    .sig-txt-overlay {
         position: absolute;
         top: 0;
-        left: 0;   
-        height: 100%;    
-        z-index: 2;    
-        animation: 1.2s overlay-3 $easeOutCirc forwards;
-        
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        animation: overlay-3 $easeOutCirc forwards;
+
         @keyframes overlay-3 {
             0% {
                 left: 0;
-                width: 0%; 
-            } 
+            }
             50% {
-                width: 50%;
-                left: 50%; 
+                left: 50%;
             }
             100% {
                 left: 100%;
-                width: 100%; 
-            } 
+            }
         }
 
-        &.out{
-            animation: 1.4s overlay-out-3 $easeOutQuart forwards;
+        &.out {
+            // animation: 1.4s overlay-out-3 $easeOutQuart forwards;
 
             @keyframes overlay-out-3 {
                 0% {
                     left: 100%;
-                    width: 100%; 
+                    width: 100%;
                 }
                 50% {
                     width: 50%;
-                    left: 50%; 
+                    left: 50%;
                 }
                 100% {
                     left: 0%;
-                    width: 0%; 
-                } 
+                    width: 0%;
+                }
             }
         }
     }
 }
-
-.typed-1{
+.txt-an-7 {
     position: relative;
 
-    &::after{
-        content: '|';
-        animation: .5s typed-1 ease-in-out infinite;
+    span {
+        display: none;
     }
 
-    @keyframes typed-1{
-        0%{
+    &::after {
+        content: "|";
+        animation: 0.5s typed-1 ease-in-out infinite;
+    }
+    @keyframes typed-1 {
+        0% {
             opacity: 0;
         }
-        100%{
+        100% {
             opacity: 1;
         }
     }
 }
-.typed-2{
+.txt-an-8 {
     position: relative;
 
-    &::after{
-        content: '|';
-        opacity: .5;
+    span {
+        display: none;
+    }
+
+    &::after {
+        content: "|";
+        opacity: 0.5;
     }
 }
-.typed-3{
+.txt-an-9 {
+    overflow: hidden;
+    display: block;
     position: relative;
-    display: none;
 
-    &.show{
-        animation: typed-3-show $easeOutCirc forwards;
-        display: block;
-
-        @keyframes typed-3-show {
-            0%{
-                opacity: 0;
-                transform: translateY(100%);
-            }
-            100%{
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    span {
+        // display: inline-block;
+        transform: translateY(100%);
+        transform-origin: top;
+        opacity: 0;
+        display: none;
     }
 }

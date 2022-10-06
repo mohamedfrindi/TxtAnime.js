@@ -24,40 +24,22 @@ $d-2 : #F1DCD7;
 
 $d-3 : #D7DCE3;
 
-$d-4 : #FFEAA7;
+$d-4 : #D0E6EF;
 
-$d-5 : #D0E6EF;
+$d-5 : #D7E7E8;
 
-$d-6 : #f3cec5;
+$d-6 : #FFEAA7;
 
 $d-7 : #D7E7E7;
 
-$d-8 : #D5D2F9;
+$d-8 : #D3EAFF;
 
 $d-9 : #F7E6E3;
-
-$d-10 : #D3D3D3;
-
-$d-11 : #D7E7E8;
-
-$d-12 : #D3EAFF;
-
-$d-13 : #F3CEC6;
-
-$d-14 : #D5D2F8;
-
-$d-15 : #FFEAA8;
-
-$d-16 : #D7E7E9;
-
-$d-17 : #D4EAFF;
-
-$d-18 : #F3CEC7;
 
 
 
 // for class
-$colors : $d-1 $d-2 $d-3 $d-4 $d-5 $d-6 $d-7 $d-8 $d-9 $d-10 $d-11 $d-12 $d-13 $d-14 $d-15 $d-16 $d-17 $d-18;
+$colors : $d-1 $d-2 $d-3 $d-4 $d-5 $d-6 $d-7 $d-8 $d-9;
 
 
 // globals style
@@ -186,6 +168,8 @@ button{
                 }
                 div {
                     display: flex;
+                    justify-content: center;
+                    align-items: center;
                     
                     > span {
                         color: #9e9e9e;
@@ -200,22 +184,24 @@ button{
                         color: $color-dark;
                     }
                 }
-                .d-11-scale{
+
+                .d-4-bg{
                     span{
                         color: #4e7ca1;
                         font-size: 40px;
                     }
                 }
-                .d-12-scale{
+                .d-5-bg{
                     span{
                         color: #2196f3;
                         font-size: 40px;
                     }
                 }
-                .d-17-type{
+
+                .d-8-type{
                     color: #2196f3;
                 }
-                .d-18-type {
+                .d-9-type {
                     color: #c93c3c;
                 }
             }
