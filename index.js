@@ -6855,7 +6855,12 @@ class Txt_an_1 {
         self.splitText();
 
         // add effect
-        gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to(`.${self.options.effect} span`, {
+        let spans;
+        self.el.forEach((el) => {
+            spans = el.querySelectorAll("span");
+        });
+
+        gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.to(spans, {
             y: 0,
             x: 0,
             rotate: 0,
@@ -6905,7 +6910,10 @@ class Txt_an_2 extends Txt_an_1{
         self.splitText();
 
         // add effect
-        let spans = document.querySelectorAll(`.${self.options.effect} span`);
+        let spans;
+        self.el.forEach((el) => {
+            spans = el.querySelectorAll("span");
+        });
 
         let tl = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline({
             defaults: {
@@ -6954,7 +6962,10 @@ class Txt_an_3 extends Txt_an_1{
         self.splitText();
 
         // add effect
-        let spans = document.querySelectorAll(`.${self.options.effect} span`);
+        let spans;
+        self.el.forEach((el) => {
+            spans = el.querySelectorAll("span");
+        });
 
         let tl = gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.timeline({
             defaults: {
@@ -7096,9 +7107,7 @@ class Txt_an_4 extends Txt_an_1{
                 });
 
                 // all spans
-                let span = document.querySelectorAll(
-                    `.${self.options.effect} span`
-                );
+                let spans = el.querySelectorAll("span");
 
                 // gsap animation
                 const gsapMainFunc = () => {
@@ -7114,21 +7123,21 @@ class Txt_an_4 extends Txt_an_1{
                             ease: gsap__WEBPACK_IMPORTED_MODULE_1__.Expo.easeOut,
                         },
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 1.3,
                         opacity: 1,
                         filter: "blur(0px)",
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 1,
                         delay: -1,
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 2,
                         opacity: 0,
                         filter: "blur(5px)",
                     });
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         opacity: 0,
                         scale: 0,
                         delay: self.options.delay,
@@ -7205,9 +7214,7 @@ class Txt_an_5 extends Txt_an_4{
                 });
 
                 // all spans
-                let span = document.querySelectorAll(
-                    `.${self.options.effect} span`
-                );
+                let spans = el.querySelectorAll("span");
 
                 // gsap animation
                 const gsapMainFunc = () => {
@@ -7223,17 +7230,17 @@ class Txt_an_5 extends Txt_an_4{
                             ease: gsap__WEBPACK_IMPORTED_MODULE_1__.Expo.easeOut,
                         },
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 1,
                         opacity: 1,
                         filter: "blur(0px)",
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 0,
                         opacity: 0,
                         filter: "blur(5px)",
                     });
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         opacity: 0,
                         scale: 5,
                         delay: self.options.delay,
@@ -7311,12 +7318,14 @@ class Txt_an_6 extends Txt_an_1 {
         });
 
         // add effect
-        let spn = document.querySelector(`.${self.options.effect} span`);
-        let overlay = document.querySelector(
-            `.${self.options.effect} .sig-txt-overlay`
-        );
+        let spans;
+        let overlay;
+        self.el.forEach(el => {
+            spans = el.querySelectorAll("span");
+            overlay = el.querySelectorAll(".sig-txt-overlay");
+        })
 
-        gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.set(spn, {
+        gsap__WEBPACK_IMPORTED_MODULE_0__.gsap.set(spans, {
             animationDelay: 1,
             animationDuration: 0.7,
         });
@@ -7615,9 +7624,7 @@ class Txt_an_9 extends Txt_an_7{
                 });
 
                 // all spans
-                let span = document.querySelectorAll(
-                    `.${self.options.effect} span`
-                );
+                let spans = el.querySelectorAll('span')
 
                 // gsap animation
                 const gsapMainFunc = () => {
@@ -7634,15 +7641,15 @@ class Txt_an_9 extends Txt_an_7{
                         },
                     });
 
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         display: "inline-block",
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         y: "0%",
                         opacity: 1,
                     });
 
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         display: "none",
                         y: "100%",
                         opacity: 0,
@@ -7686,7 +7693,7 @@ class Txt_an_9 extends Txt_an_7{
 /******/ var __webpack_module_cache__ = {};
 /******/ 
 /******/ // The require function
-/******/ function __nested_webpack_require_293752__(moduleId) {
+/******/ function __nested_webpack_require_293738__(moduleId) {
 /******/ 	// Check if module is in cache
 /******/ 	var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 	if (cachedModule !== undefined) {
@@ -7700,7 +7707,7 @@ class Txt_an_9 extends Txt_an_7{
 /******/ 	};
 /******/ 
 /******/ 	// Execute the module function
-/******/ 	__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_293752__);
+/******/ 	__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_293738__);
 /******/ 
 /******/ 	// Return the exports of the module
 /******/ 	return module.exports;
@@ -7710,11 +7717,11 @@ class Txt_an_9 extends Txt_an_7{
 /******/ /* webpack/runtime/compat get default export */
 /******/ (() => {
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__nested_webpack_require_293752__.n = (module) => {
+/******/ 	__nested_webpack_require_293738__.n = (module) => {
 /******/ 		var getter = module && module.__esModule ?
 /******/ 			() => (module['default']) :
 /******/ 			() => (module);
-/******/ 		__nested_webpack_require_293752__.d(getter, { a: getter });
+/******/ 		__nested_webpack_require_293738__.d(getter, { a: getter });
 /******/ 		return getter;
 /******/ 	};
 /******/ })();
@@ -7722,9 +7729,9 @@ class Txt_an_9 extends Txt_an_7{
 /******/ /* webpack/runtime/define property getters */
 /******/ (() => {
 /******/ 	// define getter functions for harmony exports
-/******/ 	__nested_webpack_require_293752__.d = (exports, definition) => {
+/******/ 	__nested_webpack_require_293738__.d = (exports, definition) => {
 /******/ 		for(var key in definition) {
-/******/ 			if(__nested_webpack_require_293752__.o(definition, key) && !__nested_webpack_require_293752__.o(exports, key)) {
+/******/ 			if(__nested_webpack_require_293738__.o(definition, key) && !__nested_webpack_require_293738__.o(exports, key)) {
 /******/ 				Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 			}
 /******/ 		}
@@ -7733,13 +7740,13 @@ class Txt_an_9 extends Txt_an_7{
 /******/ 
 /******/ /* webpack/runtime/hasOwnProperty shorthand */
 /******/ (() => {
-/******/ 	__nested_webpack_require_293752__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	__nested_webpack_require_293738__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ })();
 /******/ 
 /******/ /* webpack/runtime/make namespace object */
 /******/ (() => {
 /******/ 	// define __esModule on exports
-/******/ 	__nested_webpack_require_293752__.r = (exports) => {
+/******/ 	__nested_webpack_require_293738__.r = (exports) => {
 /******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 		}
@@ -7749,7 +7756,7 @@ class Txt_an_9 extends Txt_an_7{
 /******/ 
 /******/ /* webpack/runtime/nonce */
 /******/ (() => {
-/******/ 	__nested_webpack_require_293752__.nc = undefined;
+/******/ 	__nested_webpack_require_293738__.nc = undefined;
 /******/ })();
 /******/ 
 /************************************************************************/
@@ -7759,12 +7766,12 @@ var __webpack_exports__ = {};
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-__nested_webpack_require_293752__.r(__webpack_exports__);
-/* harmony export */ __nested_webpack_require_293752__.d(__webpack_exports__, {
+__nested_webpack_require_293738__.r(__webpack_exports__);
+/* harmony export */ __nested_webpack_require_293738__.d(__webpack_exports__, {
 /* harmony export */   "TxtAnime": () => (/* reexport safe */ _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__.TxtAnime)
 /* harmony export */ });
-/* harmony import */ var _scss_TxtAnime_scss__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_293752__(/*! ./scss/TxtAnime.scss */ "./src/scss/TxtAnime.scss");
-/* harmony import */ var _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_293752__(/*! ./js/TxtAnime */ "./src/js/TxtAnime.js");
+/* harmony import */ var _scss_TxtAnime_scss__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_293738__(/*! ./scss/TxtAnime.scss */ "./src/scss/TxtAnime.scss");
+/* harmony import */ var _js_TxtAnime__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_293738__(/*! ./js/TxtAnime */ "./src/js/TxtAnime.js");
 
 
 

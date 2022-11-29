@@ -93,7 +93,12 @@ export class Txt_an_1 {
         self.splitText();
 
         // add effect
-        gsap.to(`.${self.options.effect} span`, {
+        let spans;
+        self.el.forEach((el) => {
+            spans = el.querySelectorAll("span");
+        });
+
+        gsap.to(spans, {
             y: 0,
             x: 0,
             rotate: 0,
@@ -143,7 +148,10 @@ export class Txt_an_2 extends Txt_an_1{
         self.splitText();
 
         // add effect
-        let spans = document.querySelectorAll(`.${self.options.effect} span`);
+        let spans;
+        self.el.forEach((el) => {
+            spans = el.querySelectorAll("span");
+        });
 
         let tl = gsap.timeline({
             defaults: {
@@ -192,7 +200,10 @@ export class Txt_an_3 extends Txt_an_1{
         self.splitText();
 
         // add effect
-        let spans = document.querySelectorAll(`.${self.options.effect} span`);
+        let spans;
+        self.el.forEach((el) => {
+            spans = el.querySelectorAll("span");
+        });
 
         let tl = gsap.timeline({
             defaults: {
@@ -334,9 +345,7 @@ export class Txt_an_4 extends Txt_an_1{
                 });
 
                 // all spans
-                let span = document.querySelectorAll(
-                    `.${self.options.effect} span`
-                );
+                let spans = el.querySelectorAll("span");
 
                 // gsap animation
                 const gsapMainFunc = () => {
@@ -352,21 +361,21 @@ export class Txt_an_4 extends Txt_an_1{
                             ease: Expo.easeOut,
                         },
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 1.3,
                         opacity: 1,
                         filter: "blur(0px)",
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 1,
                         delay: -1,
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 2,
                         opacity: 0,
                         filter: "blur(5px)",
                     });
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         opacity: 0,
                         scale: 0,
                         delay: self.options.delay,
@@ -443,9 +452,7 @@ export class Txt_an_5 extends Txt_an_4{
                 });
 
                 // all spans
-                let span = document.querySelectorAll(
-                    `.${self.options.effect} span`
-                );
+                let spans = el.querySelectorAll("span");
 
                 // gsap animation
                 const gsapMainFunc = () => {
@@ -461,17 +468,17 @@ export class Txt_an_5 extends Txt_an_4{
                             ease: Expo.easeOut,
                         },
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 1,
                         opacity: 1,
                         filter: "blur(0px)",
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         scale: 0,
                         opacity: 0,
                         filter: "blur(5px)",
                     });
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         opacity: 0,
                         scale: 5,
                         delay: self.options.delay,
@@ -549,12 +556,14 @@ export class Txt_an_6 extends Txt_an_1 {
         });
 
         // add effect
-        let spn = document.querySelector(`.${self.options.effect} span`);
-        let overlay = document.querySelector(
-            `.${self.options.effect} .sig-txt-overlay`
-        );
+        let spans;
+        let overlay;
+        self.el.forEach(el => {
+            spans = el.querySelectorAll("span");
+            overlay = el.querySelectorAll(".sig-txt-overlay");
+        })
 
-        gsap.set(spn, {
+        gsap.set(spans, {
             animationDelay: 1,
             animationDuration: 0.7,
         });
@@ -853,9 +862,7 @@ export class Txt_an_9 extends Txt_an_7{
                 });
 
                 // all spans
-                let span = document.querySelectorAll(
-                    `.${self.options.effect} span`
-                );
+                let spans = el.querySelectorAll('span')
 
                 // gsap animation
                 const gsapMainFunc = () => {
@@ -872,15 +879,15 @@ export class Txt_an_9 extends Txt_an_7{
                         },
                     });
 
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         display: "inline-block",
                     });
-                    tl.to(span[counter], {
+                    tl.to(spans[counter], {
                         y: "0%",
                         opacity: 1,
                     });
 
-                    tl.set(span[counter], {
+                    tl.set(spans[counter], {
                         display: "none",
                         y: "100%",
                         opacity: 0,

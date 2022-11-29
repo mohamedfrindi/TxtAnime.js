@@ -27,7 +27,6 @@
     "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
-    "node-sass": "^6.0.1",
     "sass": "^1.54.8",
     "sass-loader": "^12.3.0",
     "style-loader": "^3.3.1",
