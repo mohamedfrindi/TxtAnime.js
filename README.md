@@ -84,7 +84,7 @@ new TxtAnime('.element',{
     // Or you can add a javascript selector  || document.querySelector('.element') or document.querySelectorAll('.elements')
 
 
-  effect : 'tx-an-1',
+  effect : 'txt-an-1',
   // Select the effect you want
   // Accepts 10 options : txt-an-1 <== 1-9
   // Data Type : string   
