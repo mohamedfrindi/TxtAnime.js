@@ -19,7 +19,7 @@ npm install txtanime.js
 // ES 2015
 import { TxtAnime } from "txtanime.js";
 
-// CommenJs
+// CommonJs
 const { TxtAnime } = require('txtanime.js');
 ````
 
